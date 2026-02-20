@@ -1,0 +1,5 @@
+
+Target types: {'__matrix_client_v3_rooms__room_id__send_m_room_message__txnId__put_event_id'}
+Predecesor types: {'__matrix_client_v3_createRoom_post_room_id'}
+Clean dependencies: {'__matrix_client_v3_createRoom_post_room_id': '!PURfkKtDipxOKEAwIa:matrix.chowchow', '__matrix_client_v3_rooms__room_id__send_m_room_message__txnId__put_event_id': None}
+Poluted dependencies: {'__matrix_client_v3_createRoom_post_room_id': '!PURfkKtDipxOKEAwIa:matrix.chowchow', '__matrix_client_v3_rooms__room_id__send_m_room_message__txnId__put_event_id': '$S34nelI35EgQEVpgyMdPd3LfoOF2YEnmZm3QtYfk1nY'}

@@ -1,0 +1,5 @@
+{"bugs":[{
+    "filepath": "InvalidDynamicObjectChecker_20x_1.json",
+    "reproducible": true,
+    "checker_name": "InvalidDynamicObjectChecker",
+    "error_code": "20x"}]}

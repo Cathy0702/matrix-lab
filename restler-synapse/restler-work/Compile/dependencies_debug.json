@@ -416,6 +416,255 @@
     "consumer": {
       "id": {
         "RequestId": {
+          "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "room_id",
+            "pathToParameter": [
+              "_matrix",
+              "client",
+              "v3",
+              "rooms"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "rooms",
+        "CandidateTypeNames": [
+          "room"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "room_id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path",
+      "annotation": {
+        "producerId": {
+          "endpoint": "/_matrix/client/v3/createRoom",
+          "method": "Post"
+        },
+        "producerParameter": {
+          "ResourceName": "room_id"
+        },
+        "consumerParameter": {
+          "ResourceName": "room_id"
+        }
+      }
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/_matrix/client/v3/createRoom",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "room_id",
+              "fullPath": {
+                "path": [
+                  "room_id"
+                ]
+              }
+            }
+          },
+          "ContainerName": "createRoom",
+          "PathContainerName": "createRoom",
+          "CandidateTypeNames": [
+            "create__room"
+          ],
+          "AccessPath": "room_id",
+          "AccessPathParts": {
+            "path": [
+              "room_id"
+            ]
+          },
+          "ResourceName": "room_id",
+          "ProducerParameterName": "id",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "event_id",
+            "pathToParameter": [
+              "_matrix",
+              "client",
+              "v3",
+              "rooms",
+              "{room_id}",
+              "redact"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "redact",
+        "CandidateTypeNames": [
+          "redact"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "event_id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path",
+      "annotation": {
+        "producerId": {
+          "endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
+          "method": "Put"
+        },
+        "producerParameter": {
+          "ResourceName": "event_id"
+        },
+        "consumerParameter": {
+          "ResourceName": "event_id"
+        }
+      }
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
+            "method": "Put"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "event_id",
+              "fullPath": {
+                "path": [
+                  "event_id"
+                ]
+              }
+            }
+          },
+          "ContainerName": "m.room.message",
+          "PathContainerName": "m.room.message",
+          "CandidateTypeNames": [
+            "m.room.message"
+          ],
+          "AccessPath": "event_id",
+          "AccessPathParts": {
+            "path": [
+              "event_id"
+            ]
+          },
+          "ResourceName": "event_id",
+          "ProducerParameterName": "id",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "txnId",
+            "pathToParameter": [
+              "_matrix",
+              "client",
+              "v3",
+              "rooms",
+              "{room_id}",
+              "redact",
+              "{event_id}"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "redact",
+        "CandidateTypeNames": [
+          "redact"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "txnId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "DictionaryPayload": {
+        "payloadType": "UuidSuffix",
+        "primitiveType": "String",
+        "name": "txnId",
+        "isObject": false
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "reason",
+            "fullPath": {
+              "path": [
+                "reason"
+              ]
+            }
+          }
+        },
+        "CandidateTypeNames": [
+          "reason"
+        ],
+        "AccessPath": "reason",
+        "AccessPathParts": {
+          "path": [
+            "reason"
+          ]
+        },
+        "ResourceName": "reason",
+        "ProducerParameterName": "reason",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
           "endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
           "method": "Put"
         },

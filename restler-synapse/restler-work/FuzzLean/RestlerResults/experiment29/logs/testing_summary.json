@@ -1,24 +1,28 @@
 {
-    "final_spec_coverage": "4 / 4",
-    "rendered_requests": "4 / 4",
-    "rendered_requests_valid_status": "4 / 4",
-    "num_fully_valid": 4,
+    "final_spec_coverage": "6 / 6",
+    "rendered_requests": "6 / 6",
+    "rendered_requests_valid_status": "6 / 6",
+    "num_fully_valid": 6,
     "num_sequence_failures": 0,
     "num_invalid_by_failed_resource_creations": 0,
-    "total_object_creations": 156,
+    "total_object_creations": 354,
     "total_requests_sent": {
         "gc": 0,
-        "main_driver": 6,
+        "main_driver": 11,
         "LeakageRuleChecker": 0,
-        "ResourceHierarchyChecker": 0,
+        "ResourceHierarchyChecker": 2,
         "UseAfterFreeChecker": 0,
-        "InvalidDynamicObjectChecker": 12,
-        "PayloadBodyChecker": 124,
+        "InvalidDynamicObjectChecker": 35,
+        "PayloadBodyChecker": 188,
         "ExamplesChecker": 0,
-        "InvalidValueChecker": 2
+        "InvalidValueChecker": 5
     },
-    "bug_buckets": {},
-    "reproducible_bug_buckets": {},
+    "bug_buckets": {
+        "InvalidDynamicObjectChecker_20x": 1
+    },
+    "reproducible_bug_buckets": {
+        "InvalidDynamicObjectChecker_20x": 1
+    },
     "settings": {
         "random_seed": 12345
     }

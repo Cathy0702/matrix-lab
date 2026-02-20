@@ -47,6 +47,18 @@
       ]
     }
   },
+  "/_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}": {
+    "PUT": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "reason"
+        }
+      ]
+    }
+  },
   "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}": {
     "PUT": {
       "Body": [

@@ -15,7 +15,7 @@
         "request_order": 0,
         "sample_request": {
             "request_sent_timestamp": null,
-            "response_received_timestamp": "2026-02-20 02:24:29",
+            "response_received_timestamp": "2026-02-20 03:59:15",
             "request_verb": "POST",
             "request_uri": "/_matrix/client/v3/createRoom",
             "request_headers": [
@@ -29,7 +29,7 @@
             "response_status_text": "OK",
             "response_headers": [
                 "Server: Synapse/1.145.0",
-                "Date: Fri, 20 Feb 2026 02:24:29 GMT",
+                "Date: Fri, 20 Feb 2026 03:59:15 GMT",
                 "Content-Type: application/json",
                 "Cache-Control: no-cache, no-store, must-revalidate",
                 "Access-Control-Allow-Origin: *",
@@ -38,7 +38,7 @@
                 "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
                 "Transfer-Encoding: chunked"
             ],
-            "response_body": "31\r\n{\"room_id\":\"!YBBqyvYxtDOtZkOaAQ:matrix.chowchow\"}\r\n0"
+            "response_body": "31\r\n{\"room_id\":\"!AXDdmJRLHivIJSHnWT:matrix.chowchow\"}\r\n0"
         },
         "tracked_parameters": {}
     },
@@ -58,7 +58,7 @@
         "request_order": 1,
         "sample_request": {
             "request_sent_timestamp": null,
-            "response_received_timestamp": "2026-02-20 02:24:47",
+            "response_received_timestamp": "2026-02-20 04:00:04",
             "request_verb": "GET",
             "request_uri": "/_matrix/client/v3/account/whoami",
             "request_headers": [
@@ -71,7 +71,7 @@
             "response_status_text": "OK",
             "response_headers": [
                 "Server: Synapse/1.145.0",
-                "Date: Fri, 20 Feb 2026 02:24:47 GMT",
+                "Date: Fri, 20 Feb 2026 04:00:04 GMT",
                 "Content-Type: application/json",
                 "Cache-Control: no-cache, no-store, must-revalidate",
                 "Access-Control-Allow-Origin: *",
@@ -105,9 +105,9 @@
         "request_order": 2,
         "sample_request": {
             "request_sent_timestamp": null,
-            "response_received_timestamp": "2026-02-20 02:24:47",
+            "response_received_timestamp": "2026-02-20 04:00:04",
             "request_verb": "PUT",
-            "request_uri": "/_matrix/client/v3/rooms/!oHtJmqSxqFETLoDAIj:matrix.chowchow/send/m.room.message/txnid7722c02708",
+            "request_uri": "/_matrix/client/v3/rooms/!ZPOtsNwRknrfXNIIBa:matrix.chowchow/send/m.room.message/txnid893b060c1d",
             "request_headers": [
                 "Accept: application/json",
                 "Host: localhost:8008",
@@ -119,7 +119,7 @@
             "response_status_text": "OK",
             "response_headers": [
                 "Server: Synapse/1.145.0",
-                "Date: Fri, 20 Feb 2026 02:24:47 GMT",
+                "Date: Fri, 20 Feb 2026 04:00:04 GMT",
                 "Content-Type: application/json",
                 "Cache-Control: no-cache, no-store, must-revalidate",
                 "Access-Control-Allow-Origin: *",
@@ -128,7 +128,7 @@
                 "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
                 "Transfer-Encoding: chunked"
             ],
-            "response_body": "3b\r\n{\"event_id\":\"$XlizHhGPP6TiBbbIPc3B3w8vCKRTrRNksC1YjUIE8Yw\"}\r\n0"
+            "response_body": "3b\r\n{\"event_id\":\"$1eygABtXZu5KHNcG6dsj9mmVW2Ru0OxyJoCJgK0oBJg\"}\r\n0"
         },
         "tracked_parameters": {}
     },
@@ -153,9 +153,9 @@
         "request_order": 3,
         "sample_request": {
             "request_sent_timestamp": null,
-            "response_received_timestamp": "2026-02-20 02:24:49",
+            "response_received_timestamp": "2026-02-20 04:00:13",
             "request_verb": "POST",
-            "request_uri": "/_matrix/client/v3/rooms/!iBmTEmAhKwUycjyeWN:matrix.chowchow/leave",
+            "request_uri": "/_matrix/client/v3/rooms/!jDBUYAQVhUMlCsDXMG:matrix.chowchow/leave",
             "request_headers": [
                 "Accept: application/json",
                 "Host: localhost:8008",
@@ -167,7 +167,7 @@
             "response_status_text": "OK",
             "response_headers": [
                 "Server: Synapse/1.145.0",
-                "Date: Fri, 20 Feb 2026 02:24:49 GMT",
+                "Date: Fri, 20 Feb 2026 04:00:13 GMT",
                 "Content-Type: application/json",
                 "Cache-Control: no-cache, no-store, must-revalidate",
                 "Access-Control-Allow-Origin: *",
@@ -177,6 +177,106 @@
                 "Transfer-Encoding: chunked"
             ],
             "response_body": "2\r\n{}\r\n0"
+        },
+        "tracked_parameters": {}
+    },
+    "613a7dc65f79c151914b3b8e4f192824d90cbbfc_1__1": {
+        "verb": "POST",
+        "endpoint": "/_matrix/client/v3/rooms/{room_id}/join",
+        "verb_endpoint": "POST /_matrix/client/v3/rooms/{room_id}/join",
+        "valid": 1,
+        "matching_prefix": [
+            {
+                "id": "32274700258bf66a474ccb0afb9fa1b0d7a6e06d_1",
+                "valid": 1
+            }
+        ],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "OK",
+        "error_message": null,
+        "request_order": 4,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2026-02-20 04:00:16",
+            "request_verb": "POST",
+            "request_uri": "/_matrix/client/v3/rooms/!SBxvRjBXSHgsBIVxlL:matrix.chowchow/join",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8008",
+                "Content-Type: application/json",
+                "AUTHORIZATION TOKEN"
+            ],
+            "request_body": "{\n    \"reason\":\"Looking for support\"}\r\n",
+            "response_status_code": "200",
+            "response_status_text": "OK",
+            "response_headers": [
+                "Server: Synapse/1.145.0",
+                "Date: Fri, 20 Feb 2026 04:00:16 GMT",
+                "Content-Type: application/json",
+                "Cache-Control: no-cache, no-store, must-revalidate",
+                "Access-Control-Allow-Origin: *",
+                "Access-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS",
+                "Access-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date",
+                "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
+                "Transfer-Encoding: chunked"
+            ],
+            "response_body": "31\r\n{\"room_id\":\"!SBxvRjBXSHgsBIVxlL:matrix.chowchow\"}\r\n0"
+        },
+        "tracked_parameters": {}
+    },
+    "a7a1c46328f5d8e4a9ff59d4b315f0b920be1805_1__1_1": {
+        "verb": "PUT",
+        "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}",
+        "verb_endpoint": "PUT /_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}",
+        "valid": 1,
+        "matching_prefix": [
+            {
+                "id": "32274700258bf66a474ccb0afb9fa1b0d7a6e06d_1",
+                "valid": 1
+            },
+            {
+                "id": "21c8cab570ae9cd89c3239ed5d14cd58d940cf9d_1",
+                "valid": 1
+            }
+        ],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "OK",
+        "error_message": null,
+        "request_order": 5,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2026-02-20 04:00:27",
+            "request_verb": "PUT",
+            "request_uri": "/_matrix/client/v3/rooms/!WHAekYyMPqdidfxfkR:matrix.chowchow/redact/$S34nelI35EgQEVpgyMdPd3LfoOF2YEnmZm3QtYfk1nY/txnidd4c619b222",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8008",
+                "Content-Type: application/json",
+                "AUTHORIZATION TOKEN"
+            ],
+            "request_body": "{\n    \"reason\":\"Indecent material\"}\r\n",
+            "response_status_code": "200",
+            "response_status_text": "OK",
+            "response_headers": [
+                "Server: Synapse/1.145.0",
+                "Date: Fri, 20 Feb 2026 04:00:27 GMT",
+                "Content-Type: application/json",
+                "Cache-Control: no-cache, no-store, must-revalidate",
+                "Access-Control-Allow-Origin: *",
+                "Access-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS",
+                "Access-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date",
+                "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
+                "Transfer-Encoding: chunked"
+            ],
+            "response_body": "3b\r\n{\"event_id\":\"$kbYqzbf7eP2GeZAwUomhLIJV-56pL2pBimmRKMWyJmg\"}\r\n0"
         },
         "tracked_parameters": {}
     }

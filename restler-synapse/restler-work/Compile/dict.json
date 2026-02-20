@@ -28,6 +28,17 @@
     "{ \"fuzz\": false }"
   ],
   "restler_custom_payload": {
+    "body": [
+      "fuzzstring",
+      "fuzzstring2",
+      "fuzzstring3",
+      "fuzzstring4",
+      "fuzzstring5",
+      "fuzzstring6",
+      "fuzzstring7",
+      "fuzzstring8",
+      "fuzzstring9"
+    ],
     "name": [
       "aaaaaaa",
       "bbbbbbb"
@@ -35,6 +46,7 @@
   },
   "restler_custom_payload_unquoted": {},
   "restler_custom_payload_uuid4_suffix": {
+    "body": "body",
     "name": "name",
     "txnId": "txnid"
   },

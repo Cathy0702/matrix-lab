@@ -11,6 +11,11 @@ Testing request: /_matrix/client/v3/rooms/_READER_DELIM__matrix_client_v3_create
 Found 3 fuzzable blocks.
 Budget: 100 values per parameter.
 Fuzzing request block 17, type: restler_custom_payload_uuid4_suffix, name: txnId
-Fuzzing request block 28, type: restler_fuzzable_string
+Fuzzing request block 28, type: restler_custom_payload, name: body
 Fuzzing request block 30, type: restler_fuzzable_group, name: msgtype
 Tested 201 combinations for request /_matrix/client/v3/rooms/_READER_DELIM__matrix_client_v3_createRoom_post_room_id_READER_DELIM/send/m.room.message/txnId PUT, combination 1
+Testing request: /_matrix/client/v3/rooms/_READER_DELIM__matrix_client_v3_createRoom_post_room_id_READER_DELIM/leave POST
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 24, type: restler_fuzzable_string
+Tested 100 combinations for request /_matrix/client/v3/rooms/_READER_DELIM__matrix_client_v3_createRoom_post_room_id_READER_DELIM/leave POST, combination 1

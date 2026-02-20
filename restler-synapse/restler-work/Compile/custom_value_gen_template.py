@@ -149,6 +149,16 @@ def gen_restler_fuzzable_object(**kwargs):
     
 
 
+def gen_restler_custom_payload_body(**kwargs):
+    example_value=None
+    if EXAMPLE_ARG in kwargs:
+        example_value = kwargs[EXAMPLE_ARG]
+
+    # Add logic here to generate values
+    return placeholder_value_generator()
+    
+
+
 def gen_restler_custom_payload_name(**kwargs):
     example_value=None
     if EXAMPLE_ARG in kwargs:
@@ -171,6 +181,7 @@ value_generators = {
 	"restler_fuzzable_bool": None,
 	"restler_fuzzable_object": None,
 	"restler_custom_payload": {
+		"body": None,
 		"name": None,
 	},
 	"restler_custom_payload_unquoted": {

@@ -23,15 +23,33 @@
       ]
     }
   },
-  "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}": {
-    "PUT": {
+  "/_matrix/client/v3/rooms/{room_id}/join": {
+    "POST": {
       "Body": [
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "body"
-        },
+          "consumer_param": "reason"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/rooms/{room_id}/leave": {
+    "POST": {
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "reason"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}": {
+    "PUT": {
+      "Body": [
         {
           "producer_endpoint": "",
           "producer_method": "",

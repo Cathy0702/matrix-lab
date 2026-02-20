@@ -31,6 +31,17 @@
     "name": [
       "aaaaaaa",
       "bbbbbbb"
+    ],
+    "body": [
+      "fuzzstring",
+      "fuzzstring2",
+      "fuzzstring3",
+      "fuzzstring4",
+      "fuzzstring5",
+      "fuzzstring6",
+      "fuzzstring7",
+      "fuzzstring8",
+      "fuzzstring9"
     ]
   },
   "restler_custom_payload_unquoted": {},

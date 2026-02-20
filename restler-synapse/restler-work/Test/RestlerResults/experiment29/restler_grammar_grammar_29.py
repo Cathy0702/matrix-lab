@@ -156,7 +156,7 @@ request = requests.Request([
     primitives.restler_static_string("{"),
     primitives.restler_static_string("""
     "body":"""),
-    primitives.restler_fuzzable_string("fuzzstring", quoted=True),
+    primitives.restler_custom_payload("body", quoted=True),
     primitives.restler_static_string(""",
     "msgtype":"""),
     primitives.restler_fuzzable_group("msgtype", ['m.text']  ,quoted=True),
@@ -165,5 +165,77 @@ request = requests.Request([
 
 ],
 requestId="/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
+)
+req_collection.add_request(request)
+
+# Endpoint: /_matrix/client/v3/rooms/{room_id}/leave, method: Post
+request = requests.Request([
+    primitives.restler_static_string("POST "),
+    primitives.restler_basepath(""),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("_matrix"),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("client"),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("v3"),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("rooms"),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string(__matrix_client_v3_createRoom_post_room_id.reader(), quoted=False),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("leave"),
+    primitives.restler_static_string(" HTTP/1.1\r\n"),
+    primitives.restler_static_string("Accept: application/json\r\n"),
+    primitives.restler_static_string("Host: localhost:8008\r\n"),
+    primitives.restler_static_string("Content-Type: "),
+    primitives.restler_static_string("application/json"),
+    primitives.restler_static_string("\r\n"),
+    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
+    primitives.restler_static_string("\r\n"),
+    primitives.restler_static_string("{"),
+    primitives.restler_static_string("""
+    "reason":"""),
+    primitives.restler_fuzzable_string("fuzzstring", quoted=True, examples=["Saying farewell - thanks for the support!"]),
+    primitives.restler_static_string("}"),
+    primitives.restler_static_string("\r\n"),
+
+],
+requestId="/_matrix/client/v3/rooms/{room_id}/leave"
+)
+req_collection.add_request(request)
+
+# Endpoint: /_matrix/client/v3/rooms/{room_id}/join, method: Post
+request = requests.Request([
+    primitives.restler_static_string("POST "),
+    primitives.restler_basepath(""),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("_matrix"),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("client"),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("v3"),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("rooms"),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string(__matrix_client_v3_createRoom_post_room_id.reader(), quoted=False),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("join"),
+    primitives.restler_static_string(" HTTP/1.1\r\n"),
+    primitives.restler_static_string("Accept: application/json\r\n"),
+    primitives.restler_static_string("Host: localhost:8008\r\n"),
+    primitives.restler_static_string("Content-Type: "),
+    primitives.restler_static_string("application/json"),
+    primitives.restler_static_string("\r\n"),
+    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
+    primitives.restler_static_string("\r\n"),
+    primitives.restler_static_string("{"),
+    primitives.restler_static_string("""
+    "reason":"""),
+    primitives.restler_fuzzable_string("fuzzstring", quoted=True, examples=["Looking for support"]),
+    primitives.restler_static_string("}"),
+    primitives.restler_static_string("\r\n"),
+
+],
+requestId="/_matrix/client/v3/rooms/{room_id}/join"
 )
 req_collection.add_request(request)

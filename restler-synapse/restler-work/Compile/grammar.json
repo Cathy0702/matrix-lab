@@ -1,0 +1,575 @@
+{
+  "Requests": [
+    {
+      "id": {
+        "endpoint": "/_matrix/client/v3/account/whoami",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "_matrix"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "client"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v3"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "account"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "whoami"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:8008"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/_matrix/client/v3/createRoom",
+        "method": "Post"
+      },
+      "method": "Post",
+      "basePath": "",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "_matrix"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "client"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v3"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "createRoom"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "__body__",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "name",
+                          "payload": {
+                            "Custom": {
+                              "payloadType": "String",
+                              "primitiveType": "String",
+                              "payloadValue": "name",
+                              "isObject": false
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "preset",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": {
+                                "Enum": [
+                                  "preset",
+                                  "String",
+                                  [
+                                    "private_chat",
+                                    "public_chat",
+                                    "trusted_private_chat"
+                                  ],
+                                  null
+                                ]
+                              },
+                              "defaultValue": "private_chat"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "topic",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "visibility",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": {
+                                "Enum": [
+                                  "visibility",
+                                  "String",
+                                  [
+                                    "public",
+                                    "private"
+                                  ],
+                                  null
+                                ]
+                              },
+                              "defaultValue": "public"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:8008"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "dependencyData": {
+        "responseParser": {
+          "writerVariables": [
+            {
+              "requestId": {
+                "endpoint": "/_matrix/client/v3/createRoom",
+                "method": "Post"
+              },
+              "accessPathParts": {
+                "path": [
+                  "room_id"
+                ]
+              },
+              "primitiveType": "String",
+              "kind": "BodyResponseProperty"
+            }
+          ],
+          "headerWriterVariables": []
+        },
+        "inputWriterVariables": [],
+        "orderingConstraintWriterVariables": [],
+        "orderingConstraintReaderVariables": []
+      },
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
+        "method": "Put"
+      },
+      "method": "Put",
+      "basePath": "",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "_matrix"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "client"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v3"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "rooms"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "String",
+            "variableName": "__matrix_client_v3_createRoom_post_room_id",
+            "isWriter": false
+          }
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "send"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "m.room.message"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Custom": {
+            "payloadType": "UuidSuffix",
+            "primitiveType": "String",
+            "payloadValue": "txnId",
+            "isObject": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "__body__",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "body",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": true,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "msgtype",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": {
+                                "Enum": [
+                                  "msgtype",
+                                  "String",
+                                  [
+                                    "m.text"
+                                  ],
+                                  null
+                                ]
+                              },
+                              "defaultValue": "m.text"
+                            }
+                          },
+                          "isRequired": true,
+                          "isReadOnly": false
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:8008"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    }
+  ]
+}

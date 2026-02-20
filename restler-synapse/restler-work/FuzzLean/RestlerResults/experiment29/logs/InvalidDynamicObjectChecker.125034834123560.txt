@@ -1,0 +1,7 @@
+
+Sending invalid request(s):
+'PUT /_matrix/client/v3/rooms/!lkXtmxFosvfKNYwwhb:matrix.chowchow?injected_query_string=123/send/m.room.message/txnid480132904a HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n'
+'PUT /_matrix/client/v3/rooms/!lkXtmxFosvfKNYwwhb:matrix.chowchow/?//send/m.room.message/txnid480132904a HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n'
+'PUT /_matrix/client/v3/rooms/!lkXtmxFosvfKNYwwhb:matrix.chowchow??/send/m.room.message/txnid480132904a HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n'
+'PUT /_matrix/client/v3/rooms/!lkXtmxFosvfKNYwwhb:matrix.chowchow/!lkXtmxFosvfKNYwwhb:matrix.chowchow/send/m.room.message/txnid480132904a HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n'
+'PUT /_matrix/client/v3/rooms/{}/send/m.room.message/txnid480132904a HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n'

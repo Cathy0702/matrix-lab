@@ -1,0 +1,147 @@
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 13)
+	Request hash: 32274700258bf66a474ccb0afb9fa1b0d7a6e06d
+
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: '_matrix'
+		- restler_static_string: '/'
+		- restler_static_string: 'client'
+		- restler_static_string: '/'
+		- restler_static_string: 'v3'
+		- restler_static_string: '/'
+		- restler_static_string: 'createRoom'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8008\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "name":'
+		+ restler_custom_payload: ["aaaaaaa", "bbbbbbb", ...]
+		- restler_static_string: ',\n    "preset":'
+		+ restler_fuzzable_group: [private_chat, public_chat, ...]
+		- restler_static_string: ',\n    "topic":'
+		- restler_fuzzable_string: '"fuzzstring"'
+		- restler_static_string: ',\n    "visibility":'
+		+ restler_fuzzable_group: [public, private, ...]
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2026-02-20 01:56:31.841: Sending: 'POST /_matrix/client/v3/createRoom HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 107\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: 8bb7a599-7d63-4d98-9156-f00236519a68\r\n\r\n{\n    "name":"aaaaaaa",\n    "preset":"private_chat",\n    "topic":"fuzzstring",\n    "visibility":"public"}\r\n'
+
+2026-02-20 01:56:31.939: Received: 'HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Fri, 20 Feb 2026 01:56:31 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n31\r\n{"room_id":"!YrrqOjIbzdtRvfjgdd:matrix.chowchow"}\r\n0\r\n\r\n'
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 2)
+	Request hash: f4c87d3ec7c3944f3b41aee3f69a283421ce11bb
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: '_matrix'
+		- restler_static_string: '/'
+		- restler_static_string: 'client'
+		- restler_static_string: '/'
+		- restler_static_string: 'v3'
+		- restler_static_string: '/'
+		- restler_static_string: 'account'
+		- restler_static_string: '/'
+		- restler_static_string: 'whoami'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8008\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2026-02-20 01:56:31.952: Sending: 'GET /_matrix/client/v3/account/whoami HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: 791fc11c-6a7c-49b1-9594-541cd36ecddb\r\n\r\n'
+
+2026-02-20 01:56:31.954: Received: 'HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Fri, 20 Feb 2026 01:56:31 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n58\r\n{"user_id":"@restler_fuzzer1:matrix.chowchow","is_guest":false,"device_id":"HWWFSGWUAY"}\r\n0\r\n\r\n'
+
+
+Generation-2: Rendering Sequence-1
+
+	Request: 1 (Current combination: 1 / 13)
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: '_matrix'
+		- restler_static_string: '/'
+		- restler_static_string: 'client'
+		- restler_static_string: '/'
+		- restler_static_string: 'v3'
+		- restler_static_string: '/'
+		- restler_static_string: 'createRoom'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8008\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "name":'
+		+ restler_custom_payload: ["aaaaaaa", "bbbbbbb", ...]
+		- restler_static_string: ',\n    "preset":'
+		+ restler_fuzzable_group: [private_chat, public_chat, ...]
+		- restler_static_string: ',\n    "topic":'
+		- restler_fuzzable_string: '"fuzzstring"'
+		- restler_static_string: ',\n    "visibility":'
+		+ restler_fuzzable_group: [public, private, ...]
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+	Request: 2 (Remaining candidate combinations: 2)
+	Request hash: 21c8cab570ae9cd89c3239ed5d14cd58d940cf9d
+
+		- restler_static_string: 'PUT '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: '_matrix'
+		- restler_static_string: '/'
+		- restler_static_string: 'client'
+		- restler_static_string: '/'
+		- restler_static_string: 'v3'
+		- restler_static_string: '/'
+		- restler_static_string: 'rooms'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM__matrix_client_v3_createRoom_post_room_id_READER_DELIM'
+		- restler_static_string: '/'
+		- restler_static_string: 'send'
+		- restler_static_string: '/'
+		- restler_static_string: 'm.room.message'
+		- restler_static_string: '/'
+		- restler_custom_payload_uuid4_suffix: 't'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8008\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "body":'
+		- restler_fuzzable_string: '"fuzzstring"'
+		- restler_static_string: ',\n    "msgtype":'
+		- restler_fuzzable_group: 'm.text'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2026-02-20 01:56:31.964: Sending: 'POST /_matrix/client/v3/createRoom HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 107\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: 127542d2-8700-419d-83b3-f03d65626f53\r\n\r\n{\n    "name":"aaaaaaa",\n    "preset":"private_chat",\n    "topic":"fuzzstring",\n    "visibility":"public"}\r\n'
+
+2026-02-20 01:56:32.064: Received: 'HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Fri, 20 Feb 2026 01:56:31 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n31\r\n{"room_id":"!XDuuDytKMstseyWGFU:matrix.chowchow"}\r\n0\r\n\r\n'
+
+2026-02-20 01:56:32.065: Sending: 'PUT /_matrix/client/v3/rooms/!XDuuDytKMstseyWGFU:matrix.chowchow/send/m.room.message/txnid809e971894 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: 127542d2-8700-419d-83b3-f03d65626f53\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n'
+
+2026-02-20 01:56:32.093: Received: 'HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Fri, 20 Feb 2026 01:56:32 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n3b\r\n{"event_id":"$uKDvzUUd5PUjy2I7qxCDOMGkjJqDAJbs_HvV2uRw7c0"}\r\n0\r\n\r\n'
+

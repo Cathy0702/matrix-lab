@@ -1,0 +1,159 @@
+# Matrix Lab – Login & Warm‑Up Checklist
+
+This is a **repeatable, low-friction routine** for resuming your Matrix (Synapse) lab after logging back into the Linux machine. Follow top‑to‑bottom; it should take ~5 minutes.
+
+---
+
+## 1. Ensure Synapse Is Running
+
+Check whether the Synapse container exists and is running:
+
+```bash
+docker ps --filter name=synapse
+```
+
+* **If it’s running** → continue.
+* **If it exists but is stopped**:
+
+```bash
+docker start synapse
+```
+
+* **If it doesn’t exist** (but the volume still exists), recreate it:
+
+```bash
+docker run -d --name synapse \
+  --mount type=volume,src=synapse-data,dst=/data \
+  -p 8008:8008 \
+  matrixdotorg/synapse:latest
+```
+
+> 🔎 Your persistent state (users, rooms, events) lives in the Docker **volume**, not the container.
+
+---
+
+## 2. Check the Client–Server API Is Alive
+
+```bash
+curl -s http://localhost:8008/_matrix/client/versions
+```
+
+* If this returns JSON, the Matrix Client–Server API is up.
+
+---
+
+## 3. Restore Authentication (Access Token)
+
+### Option A — Reuse a saved token (recommended)
+
+If you saved it locally:
+
+```bash
+export MATRIX_TOKEN="$(cat ~/.matrix_token)"
+```
+
+### Option B — Log in again (always safe)
+
+```bash
+curl -s -X POST http://localhost:8008/_matrix/client/v3/login \
+  -H "Content-Type: application/json" \
+  -d '{
+    "type": "m.login.password",
+    "identifier": {"type":"m.id.user","user":"YOUR_USERNAME"},
+    "password": "YOUR_PASSWORD"
+  }'
+```
+
+Copy the returned `access_token` and export it:
+
+```bash
+export MATRIX_TOKEN=PASTE_TOKEN_HERE
+```
+
+---
+
+## 4. Confirm Your Identity
+
+```bash
+curl -s http://localhost:8008/_matrix/client/v3/account/whoami \
+  -H "Authorization: Bearer $MATRIX_TOKEN"
+```
+
+Expected output:
+
+```json
+{"user_id":"@username:your.server.name"}
+```
+
+---
+
+## 5. Re-anchor Yourself in Room State
+
+```bash
+curl -s http://localhost:8008/_matrix/client/v3/joined_rooms \
+  -H "Authorization: Bearer $MATRIX_TOKEN"
+```
+
+This tells you:
+
+* which rooms exist
+* what shared state you’re resuming
+
+---
+
+## 6. (Optional) Verify Message Flow via `/sync`
+
+```bash
+curl -s http://localhost:8008/_matrix/client/v3/sync \
+  -H "Authorization: Bearer $MATRIX_TOKEN" | jq .
+```
+
+This endpoint is the **core of Matrix**. Use it often.
+
+---
+
+## What You Do *Not* Need to Redo
+
+* ❌ Regenerate config
+* ❌ Recreate users
+* ❌ Recreate rooms
+* ❌ Reinstall Synapse
+
+Unless you delete the Docker volume (`synapse-data`), **everything persists**.
+
+---
+
+## A Good Goal for Each Session
+
+Pick **one** focus per session:
+
+* Understand `/sync` (state vs timeline)
+* Observe a real client (Element Web + devtools)
+* Test controlled invalid inputs (pre‑fuzzing intuition)
+
+> Think: *“What protocol behavior do I want to understand today?”*
+
+---
+
+## Reset (Only If You Intend To)
+
+Stop and remove the container (keeps data):
+
+```bash
+docker stop synapse
+docker rm synapse
+```
+
+⚠️ **Full reset (deletes all state):**
+
+```bash
+docker volume rm synapse-data
+```
+
+---
+
+**Mental model:** You are not just “using chat.” You are interacting with a real, versioned, event‑based distributed protocol endpoint. Each session builds protocol intuition.
+
+
+**Local element login**: use `http://matrix.chowchow:8008` as server under UBC CS VPN
+**Account**: sliu0702, cathyyyyliu, restler_fuzzer1(pass1234)

@@ -176,6 +176,90 @@
     "consumer": {
       "id": {
         "RequestId": {
+          "endpoint": "/_matrix/client/v3/events/{event_id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "event_id",
+            "pathToParameter": [
+              "_matrix",
+              "client",
+              "v3",
+              "events"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "events",
+        "PathContainerName": "events",
+        "CandidateTypeNames": [
+          "event"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "event_id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path",
+      "annotation": {
+        "producerId": {
+          "endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
+          "method": "Put"
+        },
+        "producerParameter": {
+          "ResourceName": "event_id"
+        },
+        "consumerParameter": {
+          "ResourceName": "event_id"
+        }
+      }
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
+            "method": "Put"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "event_id",
+              "fullPath": {
+                "path": [
+                  "event_id"
+                ]
+              }
+            }
+          },
+          "ContainerName": "m.room.message",
+          "PathContainerName": "m.room.message",
+          "CandidateTypeNames": [
+            "m.room.message"
+          ],
+          "AccessPath": "event_id",
+          "AccessPathParts": {
+            "path": [
+              "event_id"
+            ]
+          },
+          "ResourceName": "event_id",
+          "ProducerParameterName": "id",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
           "endpoint": "/_matrix/client/v3/rooms/{room_id}/join",
           "method": "Post"
         },

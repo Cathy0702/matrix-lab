@@ -1,7 +1,13 @@
-InvalidDynamicObjectChecker_20x: 1
-Total Buckets: 1
+InvalidDynamicObjectChecker_20x: 2
+Total Buckets: 2
 -------------
 InvalidDynamicObjectChecker_20x - Bug was reproduced - InvalidDynamicObjectChecker_20x_1.replay.txt
+Hash: InvalidDynamicObjectChecker_20x_10fa4eab8851d3475234afd7e3d242482e57468b
+POST /_matrix/client/v3/createRoom HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "name":name,\n    "preset":preset,\n    "topic":fuzzstring,\n    "visibility":visibility}\r\n
+PUT /_matrix/client/v3/rooms/_READER_DELIM__matrix_client_v3_createRoom_post_room_id_READER_DELIM/send/m.room.message/txnId HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "body":body,\n    "msgtype":msgtype}\r\n
+GET /_matrix/client/v3/events/_READER_DELIM__matrix_client_v3_rooms__room_id__send_m_room_message__txnId__put_event_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidDynamicObjectChecker_20x - Bug was reproduced - InvalidDynamicObjectChecker_20x_2.replay.txt
 Hash: InvalidDynamicObjectChecker_20x_a8e6ecf83a62d545647283618ed15ced5884c924
 POST /_matrix/client/v3/createRoom HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "name":name,\n    "preset":preset,\n    "topic":fuzzstring,\n    "visibility":visibility}\r\n
 PUT /_matrix/client/v3/rooms/_READER_DELIM__matrix_client_v3_createRoom_post_room_id_READER_DELIM/send/m.room.message/txnId HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "body":body,\n    "msgtype":msgtype}\r\n

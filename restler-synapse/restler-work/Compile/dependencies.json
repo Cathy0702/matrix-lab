@@ -29,6 +29,18 @@
       ]
     }
   },
+  "/_matrix/client/v3/events/{event_id}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "event_id",
+          "consumer_param": "event_id"
+        }
+      ]
+    }
+  },
   "/_matrix/client/v3/rooms/{room_id}/join": {
     "POST": {
       "Path": [

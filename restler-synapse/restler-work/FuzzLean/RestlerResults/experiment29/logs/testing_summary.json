@@ -5,23 +5,24 @@
     "num_fully_valid": 6,
     "num_sequence_failures": 0,
     "num_invalid_by_failed_resource_creations": 0,
-    "total_object_creations": 354,
+    "total_object_creations": 360,
     "total_requests_sent": {
         "gc": 0,
-        "main_driver": 11,
+        "main_driver": 13,
+        "RedactContentChecker": 1,
         "LeakageRuleChecker": 0,
         "ResourceHierarchyChecker": 2,
         "UseAfterFreeChecker": 0,
-        "InvalidDynamicObjectChecker": 35,
+        "InvalidDynamicObjectChecker": 42,
         "PayloadBodyChecker": 188,
         "ExamplesChecker": 0,
         "InvalidValueChecker": 5
     },
     "bug_buckets": {
-        "InvalidDynamicObjectChecker_20x": 1
+        "InvalidDynamicObjectChecker_20x": 2
     },
     "reproducible_bug_buckets": {
-        "InvalidDynamicObjectChecker_20x": 1
+        "InvalidDynamicObjectChecker_20x": 2
     },
     "settings": {
         "random_seed": 12345

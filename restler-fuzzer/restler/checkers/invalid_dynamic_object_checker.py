@@ -67,7 +67,7 @@ class InvalidDynamicObjectChecker(CheckerBase):
         new_seq = new_seq + sequences.Sequence(last_request)
 
         # Get and send each invalid request
-        self._checker_log.checker_print("\nSending invalid request(s):")
+        self._checker_log.checker_print("\nSending invalid request(s) !test!:")
         for data in self._prepare_invalid_requests(last_rendering):
             self._checker_log.checker_print(repr(data))
             response = self._send_request(last_request_parser, data)
@@ -115,10 +115,10 @@ class InvalidDynamicObjectChecker(CheckerBase):
             consumer_types.append(dependencies.get_variable(data[i]))
 
         default_invalids = [f'{VALID_REPLACE_STR}?injected_query_string=123',\
-                            f'{VALID_REPLACE_STR}/?/',\
-                            f'{VALID_REPLACE_STR}??',\
+                            f'{VALID_REPLACE_STR}/!*?/',\
+                            f'{VALID_REPLACE_STR}?**)?',\
                             f'{VALID_REPLACE_STR}/{VALID_REPLACE_STR}',\
-                            '{}']
+                            '{!!!?}']
 
         invalid_strs = []
         if not Settings().get_checker_arg(self._friendly_name, 'no_defaults'):

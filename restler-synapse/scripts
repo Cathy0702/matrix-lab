@@ -1,0 +1,33 @@
+curl -s -X POST "http://localhost:8008/_matrix/client/v3/login" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "type": "m.login.password",
+    "identifier": {
+      "type": "m.id.user",
+      "user": "sliu0702"
+    },
+    "password": ""
+  }'
+
+curl -s 'http://198.162.52.40:8008/_matrix/client/v3/events/$VH5uCKBL9RGvO-UK0yt-2Uoum8xXuSIF9vdzuOCZ0aM' \
+  -H "Authorization: Bearer $TOKEN"
+
+curl -X PUT \
+  "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/send/m.room.message/txnid4" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "msgtype": "m.text",
+    "body": "Hello from curl!"
+  }'
+
+"http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/send/m.reaction/txnid_react1" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "m.relates_to": {
+      "rel_type": "m.annotation",
+      "event_id": "$sTkBbKX_-Cgj0dOt7fq4sf_6m67yznLy_m1sHX6mAMU",
+      "key": "😑"
+    }
+  }'

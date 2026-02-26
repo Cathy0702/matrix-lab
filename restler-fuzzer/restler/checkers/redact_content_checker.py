@@ -45,7 +45,6 @@ class RedactContentChecker(CheckerBase):
             seq = self._sequence + Sequence(target)
             response, _ = self._render_and_send_data(seq, target)
             if not response:
-                # Don't abort the whole checker run because one request failed
                 continue
 
             body = getattr(response, "json_body", None)

@@ -10,6 +10,7 @@
         "gc": 0,
         "main_driver": 13,
         "RedactContentChecker": 1,
+        "LeaveSendChecker": 1,
         "LeakageRuleChecker": 0,
         "ResourceHierarchyChecker": 2,
         "UseAfterFreeChecker": 0,

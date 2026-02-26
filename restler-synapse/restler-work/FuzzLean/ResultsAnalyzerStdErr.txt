@@ -1,110 +1,110 @@
-Warning: could not parse request in line 1416: PUT /_matrix/client/v3/rooms/!eIlDxISSmFExOOaZZD:matrix.chowchow?**)?/send/m.room.message/txnidd0688c54e7 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 1768: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1780: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1816: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1828: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1840: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 1850: PUT /_matrix/client/v3/rooms/!HUqttGyVyvuvgsqiru:matrix.chowchow/send/m.room.message/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 1852: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1864: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 1874: PUT /_matrix/client/v3/rooms/!HUqttGyVyvuvgsqiru:matrix.chowchow/send/m.room.message/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 1876: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1888: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1900: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1912: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 1922: PUT /_matrix/client/v3/rooms/!HUqttGyVyvuvgsqiru:matrix.chowchow/send/m.room.message/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 1924: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1944: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1974: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1986: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 1998: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 2008: PUT /_matrix/client/v3/rooms/!HUqttGyVyvuvgsqiru:matrix.chowchow/send/m.room.message/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 2010: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2022: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2034: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2046: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 2056: PUT /_matrix/client/v3/rooms/!HUqttGyVyvuvgsqiru:matrix.chowchow/send/m.room.message/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 2058: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2070: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2082: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 2092: PUT /_matrix/client/v3/rooms/!HUqttGyVyvuvgsqiru:matrix.chowchow/send/m.room.message/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 2094: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2106: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2118: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 2128: PUT /_matrix/client/v3/rooms/!HUqttGyVyvuvgsqiru:matrix.chowchow/send/m.room.message/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 2130: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2142: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2154: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2166: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2186: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2198: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2210: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 2220: PUT /_matrix/client/v3/rooms/!HUqttGyVyvuvgsqiru:matrix.chowchow/send/m.room.message/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 2222: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2234: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 2246: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 2256: PUT /_matrix/client/v3/rooms/!HUqttGyVyvuvgsqiru:matrix.chowchow/send/m.room.message/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 2258: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 2268: PUT /_matrix/client/v3/rooms/!HUqttGyVyvuvgsqiru:matrix.chowchow/send/m.room.message/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 2270: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 2280: PUT /_matrix/client/v3/rooms/!HUqttGyVyvuvgsqiru:matrix.chowchow/send/m.room.message/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
-Warning: could not parse response in line 2282: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 2819: POST /_matrix/client/v3/rooms/!YqrHlLlmqoOMhLzUae:matrix.chowchow?**)?/leave HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 61\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Saying farewell - thanks for the support!"}\r\n
-Warning: could not parse request in line 3489: POST /_matrix/client/v3/rooms/!BlhDIQcbJifwitBIpU:matrix.chowchow?**)?/join HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 39\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Looking for support"}\r\n
-Warning: could not parse request in line 4210: GET /_matrix/client/v3/events/$_riSvhEoWJ8z8qeIg73H3ukYS487D1Ze8ORfWULcooc?**)? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\n\r\n
-Warning: could not parse request in line 4408: PUT /_matrix/client/v3/rooms/!iWCXIetDjZKIeMySDN:matrix.chowchow?injected_query_string=123/redact/$XklNGhFmw51cFWnCZj6whAePDMEwIukI8cwGeoF1roI?injected_query_string=123/txnid8a46b445c5 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse request in line 4423: PUT /_matrix/client/v3/rooms/!iWCXIetDjZKIeMySDN:matrix.chowchow/!*?//redact/$XklNGhFmw51cFWnCZj6whAePDMEwIukI8cwGeoF1roI/!*?//txnid8a46b445c5 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse request in line 4457: PUT /_matrix/client/v3/rooms/!iWCXIetDjZKIeMySDN:matrix.chowchow?**)?/redact/$XklNGhFmw51cFWnCZj6whAePDMEwIukI8cwGeoF1roI?**)?/txnid8a46b445c5 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse request in line 4462: PUT /_matrix/client/v3/rooms/!iWCXIetDjZKIeMySDN:matrix.chowchow/redact/$XklNGhFmw51cFWnCZj6whAePDMEwIukI8cwGeoF1roI?**)?/txnid8a46b445c5 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse request in line 4467: PUT /_matrix/client/v3/rooms/!iWCXIetDjZKIeMySDN:matrix.chowchow?**)?/redact/$XklNGhFmw51cFWnCZj6whAePDMEwIukI8cwGeoF1roI/txnid8a46b445c5 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse request in line 4487: PUT /_matrix/client/v3/rooms/{!!!?}/redact/{!!!?}/txnid8a46b445c5 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 4675: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4686: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4721: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4732: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4743: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 4752: PUT /_matrix/client/v3/rooms/!ZStDGlQEurqhdbblRo:matrix.chowchow/redact/$cO1Dxyf-Kj-lcEin9K8wxKehLAc4aJib16-FPnhobiE/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 4754: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4765: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 4774: PUT /_matrix/client/v3/rooms/!ZStDGlQEurqhdbblRo:matrix.chowchow/redact/$cO1Dxyf-Kj-lcEin9K8wxKehLAc4aJib16-FPnhobiE/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 4776: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4787: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4798: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4809: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 4818: PUT /_matrix/client/v3/rooms/!ZStDGlQEurqhdbblRo:matrix.chowchow/redact/$cO1Dxyf-Kj-lcEin9K8wxKehLAc4aJib16-FPnhobiE/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 4820: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4839: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4866: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4877: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4888: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 4897: PUT /_matrix/client/v3/rooms/!ZStDGlQEurqhdbblRo:matrix.chowchow/redact/$cO1Dxyf-Kj-lcEin9K8wxKehLAc4aJib16-FPnhobiE/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 4899: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4910: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4921: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4932: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 4941: PUT /_matrix/client/v3/rooms/!ZStDGlQEurqhdbblRo:matrix.chowchow/redact/$cO1Dxyf-Kj-lcEin9K8wxKehLAc4aJib16-FPnhobiE/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 4943: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4954: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4965: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 4974: PUT /_matrix/client/v3/rooms/!ZStDGlQEurqhdbblRo:matrix.chowchow/redact/$cO1Dxyf-Kj-lcEin9K8wxKehLAc4aJib16-FPnhobiE/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 4976: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4987: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 4998: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 5007: PUT /_matrix/client/v3/rooms/!ZStDGlQEurqhdbblRo:matrix.chowchow/redact/$cO1Dxyf-Kj-lcEin9K8wxKehLAc4aJib16-FPnhobiE/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 5009: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 5020: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 5031: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 5042: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 5061: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 5072: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 5083: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 5092: PUT /_matrix/client/v3/rooms/!ZStDGlQEurqhdbblRo:matrix.chowchow/redact/$cO1Dxyf-Kj-lcEin9K8wxKehLAc4aJib16-FPnhobiE/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 5094: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 5105: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse response in line 5116: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 5125: PUT /_matrix/client/v3/rooms/!ZStDGlQEurqhdbblRo:matrix.chowchow/redact/$cO1Dxyf-Kj-lcEin9K8wxKehLAc4aJib16-FPnhobiE/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 5127: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 5136: PUT /_matrix/client/v3/rooms/!ZStDGlQEurqhdbblRo:matrix.chowchow/redact/$cO1Dxyf-Kj-lcEin9K8wxKehLAc4aJib16-FPnhobiE/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 5138: HTTP/1.1 400 Bad Request\r\n\r\n
-Warning: could not parse request in line 5147: PUT /_matrix/client/v3/rooms/!ZStDGlQEurqhdbblRo:matrix.chowchow/redact/$cO1Dxyf-Kj-lcEin9K8wxKehLAc4aJib16-FPnhobiE/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
-Warning: could not parse response in line 5149: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 1424: PUT /_matrix/client/v3/rooms/!VHupQbeNusNqRaYSYB:matrix.chowchow?**)?/send/m.room.message/txnid511ca118ac HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 1776: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 1788: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 1824: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 1836: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 1848: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 1858: PUT /_matrix/client/v3/rooms/!oNtMLEugrMoFseXCfM:matrix.chowchow/send/m.room.message/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 1860: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 1872: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 1882: PUT /_matrix/client/v3/rooms/!oNtMLEugrMoFseXCfM:matrix.chowchow/send/m.room.message/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 1884: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 1896: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 1908: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 1920: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 1930: PUT /_matrix/client/v3/rooms/!oNtMLEugrMoFseXCfM:matrix.chowchow/send/m.room.message/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 1932: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 1952: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 1982: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 1994: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2006: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 2016: PUT /_matrix/client/v3/rooms/!oNtMLEugrMoFseXCfM:matrix.chowchow/send/m.room.message/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 2018: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2030: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2042: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2054: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 2064: PUT /_matrix/client/v3/rooms/!oNtMLEugrMoFseXCfM:matrix.chowchow/send/m.room.message/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 2066: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2078: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2090: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 2100: PUT /_matrix/client/v3/rooms/!oNtMLEugrMoFseXCfM:matrix.chowchow/send/m.room.message/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 2102: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2114: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2126: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 2136: PUT /_matrix/client/v3/rooms/!oNtMLEugrMoFseXCfM:matrix.chowchow/send/m.room.message/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 2138: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2150: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2162: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2174: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2194: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2206: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2218: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 2228: PUT /_matrix/client/v3/rooms/!oNtMLEugrMoFseXCfM:matrix.chowchow/send/m.room.message/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 2230: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2242: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 2254: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 2264: PUT /_matrix/client/v3/rooms/!oNtMLEugrMoFseXCfM:matrix.chowchow/send/m.room.message/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 2266: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 2276: PUT /_matrix/client/v3/rooms/!oNtMLEugrMoFseXCfM:matrix.chowchow/send/m.room.message/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 2278: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 2288: PUT /_matrix/client/v3/rooms/!oNtMLEugrMoFseXCfM:matrix.chowchow/send/m.room.message/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 52\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "body":"fuzzstring",\n    "msgtype":"m.text"}\r\n
+Warning: could not parse response in line 2290: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 2836: POST /_matrix/client/v3/rooms/!aIMmDUyqgHBDlkhGJi:matrix.chowchow?**)?/leave HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 61\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Saying farewell - thanks for the support!"}\r\n
+Warning: could not parse request in line 3510: POST /_matrix/client/v3/rooms/!iOdnKChslyfxBWThTR:matrix.chowchow?**)?/join HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 39\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Looking for support"}\r\n
+Warning: could not parse request in line 4235: GET /_matrix/client/v3/events/$1sW5bV7x-uZMl0Vc56T5NwqizoeyqxO2-dqB-QxrNoA?**)? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\n\r\n
+Warning: could not parse request in line 4437: PUT /_matrix/client/v3/rooms/!rgYXulLBtlsPtljGqb:matrix.chowchow?injected_query_string=123/redact/$gLv1x2bZpxJqv4CleWpF57hargyLsUR0-4ddiF6jS6M?injected_query_string=123/txnidd4979b0a49 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse request in line 4452: PUT /_matrix/client/v3/rooms/!rgYXulLBtlsPtljGqb:matrix.chowchow/!*?//redact/$gLv1x2bZpxJqv4CleWpF57hargyLsUR0-4ddiF6jS6M/!*?//txnidd4979b0a49 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse request in line 4486: PUT /_matrix/client/v3/rooms/!rgYXulLBtlsPtljGqb:matrix.chowchow?**)?/redact/$gLv1x2bZpxJqv4CleWpF57hargyLsUR0-4ddiF6jS6M?**)?/txnidd4979b0a49 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse request in line 4491: PUT /_matrix/client/v3/rooms/!rgYXulLBtlsPtljGqb:matrix.chowchow/redact/$gLv1x2bZpxJqv4CleWpF57hargyLsUR0-4ddiF6jS6M?**)?/txnidd4979b0a49 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse request in line 4496: PUT /_matrix/client/v3/rooms/!rgYXulLBtlsPtljGqb:matrix.chowchow?**)?/redact/$gLv1x2bZpxJqv4CleWpF57hargyLsUR0-4ddiF6jS6M/txnidd4979b0a49 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse request in line 4516: PUT /_matrix/client/v3/rooms/{!!!?}/redact/{!!!?}/txnidd4979b0a49 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 4704: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4715: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4750: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4761: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4772: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 4781: PUT /_matrix/client/v3/rooms/!pvCybCTiRnxQxiloYJ:matrix.chowchow/redact/$095hJ2zeFWB10CEo0yqvz_fZ-waQ4g5fu8VZ-Wb-ozI/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 4783: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4794: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 4803: PUT /_matrix/client/v3/rooms/!pvCybCTiRnxQxiloYJ:matrix.chowchow/redact/$095hJ2zeFWB10CEo0yqvz_fZ-waQ4g5fu8VZ-Wb-ozI/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 4805: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4816: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4827: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4838: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 4847: PUT /_matrix/client/v3/rooms/!pvCybCTiRnxQxiloYJ:matrix.chowchow/redact/$095hJ2zeFWB10CEo0yqvz_fZ-waQ4g5fu8VZ-Wb-ozI/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 4849: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4868: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4895: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4906: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4917: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 4926: PUT /_matrix/client/v3/rooms/!pvCybCTiRnxQxiloYJ:matrix.chowchow/redact/$095hJ2zeFWB10CEo0yqvz_fZ-waQ4g5fu8VZ-Wb-ozI/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 4928: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4939: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4950: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4961: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 4970: PUT /_matrix/client/v3/rooms/!pvCybCTiRnxQxiloYJ:matrix.chowchow/redact/$095hJ2zeFWB10CEo0yqvz_fZ-waQ4g5fu8VZ-Wb-ozI/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 4972: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4983: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 4994: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 5003: PUT /_matrix/client/v3/rooms/!pvCybCTiRnxQxiloYJ:matrix.chowchow/redact/$095hJ2zeFWB10CEo0yqvz_fZ-waQ4g5fu8VZ-Wb-ozI/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 5005: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 5016: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 5027: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 5036: PUT /_matrix/client/v3/rooms/!pvCybCTiRnxQxiloYJ:matrix.chowchow/redact/$095hJ2zeFWB10CEo0yqvz_fZ-waQ4g5fu8VZ-Wb-ozI/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 5038: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 5049: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 5060: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 5071: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 5090: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 5101: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 5112: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 5121: PUT /_matrix/client/v3/rooms/!pvCybCTiRnxQxiloYJ:matrix.chowchow/redact/$095hJ2zeFWB10CEo0yqvz_fZ-waQ4g5fu8VZ-Wb-ozI/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 5123: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 5134: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse response in line 5145: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 5154: PUT /_matrix/client/v3/rooms/!pvCybCTiRnxQxiloYJ:matrix.chowchow/redact/$095hJ2zeFWB10CEo0yqvz_fZ-waQ4g5fu8VZ-Wb-ozI/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 5156: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 5165: PUT /_matrix/client/v3/rooms/!pvCybCTiRnxQxiloYJ:matrix.chowchow/redact/$095hJ2zeFWB10CEo0yqvz_fZ-waQ4g5fu8VZ-Wb-ozI/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 5167: HTTP/1.1 400 Bad Request\r\n\r\n
+Warning: could not parse request in line 5176: PUT /_matrix/client/v3/rooms/!pvCybCTiRnxQxiloYJ:matrix.chowchow/redact/$095hJ2zeFWB10CEo0yqvz_fZ-waQ4g5fu8VZ-Wb-ozI/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\n_OMITTED_AUTH_TOKEN_\r\nContent-Length: 37\r\nUser-Agent: restler/9.3.1\r\n\r\n{\n    "reason":"Indecent material"}\r\n
+Warning: could not parse response in line 5178: HTTP/1.1 400 Bad Request\r\n\r\n

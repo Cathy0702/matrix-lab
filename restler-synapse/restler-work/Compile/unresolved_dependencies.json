@@ -12,49 +12,31 @@
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "topic"
-        },
-        {
-          "producer_endpoint": "",
-          "producer_method": "",
-          "producer_resource_name": "",
           "consumer_param": "visibility"
         }
       ]
     }
   },
-  "/_matrix/client/v3/rooms/{room_id}/join": {
-    "POST": {
-      "Body": [
-        {
-          "producer_endpoint": "",
-          "producer_method": "",
-          "producer_resource_name": "",
-          "consumer_param": "reason"
-        }
-      ]
-    }
-  },
-  "/_matrix/client/v3/rooms/{room_id}/leave": {
-    "POST": {
-      "Body": [
-        {
-          "producer_endpoint": "",
-          "producer_method": "",
-          "producer_resource_name": "",
-          "consumer_param": "reason"
-        }
-      ]
-    }
-  },
-  "/_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}": {
+  "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}": {
     "PUT": {
       "Body": [
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "reason"
+          "consumer_param": "m.relates_to"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "m.relates_to/key"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "m.relates_to/rel_type"
         }
       ]
     }

@@ -4,16 +4,8 @@
         "endpoint": "/_matrix/client/v3/createRoom",
         "valid": 1,
         "matching_prefix": [],
-        "request": "POST /_matrix/client/v3/createRoom HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"name\":\"aaaaaaa\",\n    \"preset\":\"private_chat\",\n    \"topic\":\"fuzzstring\",\n    \"visibility\":\"public\"}\r\n",
-        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 26 Feb 2026 05:16:28 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n31\r\n{\"room_id\":\"!srGROzHUjjtWHAGoRB:matrix.chowchow\"}\r\n0\r\n\r\n"
-    },
-    "f4c87d3ec7c3944f3b41aee3f69a283421ce11bb_1": {
-        "verb": "GET",
-        "endpoint": "/_matrix/client/v3/account/whoami",
-        "valid": 1,
-        "matching_prefix": [],
-        "request": "GET /_matrix/client/v3/account/whoami HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nAUTHORIZATION TOKEN\r\n\r\n",
-        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 26 Feb 2026 05:16:29 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n58\r\n{\"user_id\":\"@restler_fuzzer1:matrix.chowchow\",\"is_guest\":false,\"device_id\":\"HWWFSGWUAY\"}\r\n0\r\n\r\n"
+        "request": "POST /_matrix/client/v3/createRoom HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"private_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"public\"}\r\n",
+        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 02 Apr 2026 08:08:56 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n31\r\n{\"room_id\":\"!wDIOBnkMTVeQYkNoMT:matrix.chowchow\"}\r\n0\r\n\r\n"
     },
     "21c8cab570ae9cd89c3239ed5d14cd58d940cf9d_1__1": {
         "verb": "PUT",
@@ -25,8 +17,8 @@
                 "valid": 1
             }
         ],
-        "request": "PUT /_matrix/client/v3/rooms/!EbAZfWsHxszSqfMrTh:matrix.chowchow/send/m.room.message/txnid406ca16290 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"body\":\"fuzzstring\",\n    \"msgtype\":\"m.text\"}\r\n",
-        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 26 Feb 2026 05:16:29 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n3b\r\n{\"event_id\":\"$_ptKLFyqWwtXAR8DKU24-H9zXoPBYssEzi2vNEQlbb8\"}\r\n0\r\n\r\n"
+        "request": "PUT /_matrix/client/v3/rooms/!CUpaiPDtZojWAKMkGx:matrix.chowchow/send/m.room.message/txnId91c8e10839 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"body\":\"custom_body_fkqoifoqf0q39fj0qiefnlb;af\",\n    \"msgtype\":\"m.text\"}\r\n",
+        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 02 Apr 2026 08:09:01 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n3b\r\n{\"event_id\":\"$fIM8gBHrFlLlQx_lKu0mU0JbCOlppT4-lTTjpnUOOEY\"}\r\n0\r\n\r\n"
     },
     "553e6a0dd7a5244842d5d238ebb62dafbc9d3fb2_1__1": {
         "verb": "POST",
@@ -38,8 +30,8 @@
                 "valid": 1
             }
         ],
-        "request": "POST /_matrix/client/v3/rooms/!mDJRbHXqgYWsXQKHUC:matrix.chowchow/leave HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"reason\":\"Saying farewell - thanks for the support!\"}\r\n",
-        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 26 Feb 2026 05:16:29 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n2\r\n{}\r\n0\r\n\r\n"
+        "request": "POST /_matrix/client/v3/rooms/!kzfAEfsrNTMESoqNld:matrix.chowchow/leave HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"reason\":\"custom_reason_sdfeewwwwwerfev3\"}\r\n",
+        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 02 Apr 2026 08:09:06 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n2\r\n{}\r\n0\r\n\r\n"
     },
     "613a7dc65f79c151914b3b8e4f192824d90cbbfc_1__1": {
         "verb": "POST",
@@ -51,8 +43,25 @@
                 "valid": 1
             }
         ],
-        "request": "POST /_matrix/client/v3/rooms/!IzTwewEvPLAPzIpyHn:matrix.chowchow/join HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"reason\":\"Looking for support\"}\r\n",
-        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 26 Feb 2026 05:16:30 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n31\r\n{\"room_id\":\"!IzTwewEvPLAPzIpyHn:matrix.chowchow\"}\r\n0\r\n\r\n"
+        "request": "POST /_matrix/client/v3/rooms/!icYTswIkMgHVeuAiAC:matrix.chowchow/join HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"reason\":\"custom_reason_sdfeewwwwwerfev3\"}\r\n",
+        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 02 Apr 2026 08:09:09 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n31\r\n{\"room_id\":\"!icYTswIkMgHVeuAiAC:matrix.chowchow\"}\r\n0\r\n\r\n"
+    },
+    "5d9f7790114833d44d157d3bb819e4634a3ff14f_1__1_1": {
+        "verb": "GET",
+        "endpoint": "/_matrix/client/v3/events/{event_id}",
+        "valid": 1,
+        "matching_prefix": [
+            {
+                "id": "32274700258bf66a474ccb0afb9fa1b0d7a6e06d_1",
+                "valid": 1
+            },
+            {
+                "id": "21c8cab570ae9cd89c3239ed5d14cd58d940cf9d_1",
+                "valid": 1
+            }
+        ],
+        "request": "GET /_matrix/client/v3/events/$HpGodFCnwMTA9EMfrXHCdZVYWEHxyQYK_Ml1l5jfOE4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nAUTHORIZATION TOKEN\r\n\r\n",
+        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 02 Apr 2026 08:09:15 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n1a4\r\n{\"type\":\"m.room.message\",\"sender\":\"@restler_fuzzer1:matrix.chowchow\",\"content\":{\"body\":\"custom_body_fkqoifoqf0q39fj0qiefnlb;af\",\"msgtype\":\"m.text\"},\"room_id\":\"!syUTXcaJeiCHtOkFVx:matrix.chowchow\",\"origin_server_ts\":1775117354948,\"unsigned\":{\"membership\":\"join\",\"age\":195,\"transaction_id\":\"txnId050eaf6e7e\"},\"event_id\":\"$HpGodFCnwMTA9EMfrXHCdZVYWEHxyQYK_Ml1l5jfOE4\",\"user_id\":\"@restler_fuzzer1:matrix.chowchow\",\"age\":195}\r\n0\r\n\r\n"
     },
     "a7a1c46328f5d8e4a9ff59d4b315f0b920be1805_1__1_1": {
         "verb": "PUT",
@@ -68,6 +77,78 @@
                 "valid": 1
             }
         ],
-        "request": "PUT /_matrix/client/v3/rooms/!ahYCAIxMVVndvhbgRY:matrix.chowchow/redact/$Uvur6nGwLK_KmHGZrU39qm3LH2b3_gpCj00chp_APhU/txnid697014d346 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"reason\":\"Indecent material\"}\r\n",
-        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 26 Feb 2026 05:16:30 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n3b\r\n{\"event_id\":\"$mpiLhQ12SfuF6-oBsqLRY83vL26htK6ptQmTdyWpkek\"}\r\n0\r\n\r\n"
+        "request": "PUT /_matrix/client/v3/rooms/!voDjoxafoHZHblRHju:matrix.chowchow/redact/$DcKjQTkFDKjM6ywYilMu4OWBz1qax1ctQ_8uZYmKCfw/txnId57015dfc02 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"reason\":\"custom_reason_sdfeewwwwwerfev3\"}\r\n",
+        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 02 Apr 2026 08:09:17 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n3b\r\n{\"event_id\":\"$VNzm02PFwnyey-Wt4M9ccg6Clw3E6zD_NDpbaEdDmRc\"}\r\n0\r\n\r\n"
+    },
+    "c95d0e39b748d68f1bb4dd0560f4d753787173e4_1__1_1": {
+        "verb": "GET",
+        "endpoint": "/_matrix/client/v1/rooms/{room_id}/relations/{event_id}",
+        "valid": 1,
+        "matching_prefix": [
+            {
+                "id": "32274700258bf66a474ccb0afb9fa1b0d7a6e06d_1",
+                "valid": 1
+            },
+            {
+                "id": "21c8cab570ae9cd89c3239ed5d14cd58d940cf9d_1",
+                "valid": 1
+            }
+        ],
+        "request": "GET /_matrix/client/v1/rooms/!MFIYDLNniZCAGxUwjM:matrix.chowchow/relations/$OtcaodtHm6Tx1hV21qRPzQKifqPSvr60fXWADWDEuWA HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nAUTHORIZATION TOKEN\r\n\r\n",
+        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 02 Apr 2026 08:09:21 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\nc\r\n{\"chunk\":[]}\r\n0\r\n\r\n"
+    },
+    "d04bfd243a6f2bc2831e33d10440342a13dbdea3_1__1_1": {
+        "verb": "POST",
+        "endpoint": "/_matrix/client/v3/rooms/{room_id}/forget",
+        "valid": 1,
+        "matching_prefix": [
+            {
+                "id": "32274700258bf66a474ccb0afb9fa1b0d7a6e06d_1",
+                "valid": 1
+            },
+            {
+                "id": "553e6a0dd7a5244842d5d238ebb62dafbc9d3fb2_1",
+                "valid": 1
+            }
+        ],
+        "request": "POST /_matrix/client/v3/rooms/!sSHyWfeqkHdelRtRuD:matrix.chowchow/forget HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nAUTHORIZATION TOKEN\r\n\r\n",
+        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 02 Apr 2026 08:09:24 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n2\r\n{}\r\n0\r\n\r\n"
+    },
+    "faed9ea648c0f7a83e59b90f6d40de7d326754ec_1__1_1": {
+        "verb": "PUT",
+        "endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}",
+        "valid": 1,
+        "matching_prefix": [
+            {
+                "id": "32274700258bf66a474ccb0afb9fa1b0d7a6e06d_1",
+                "valid": 1
+            },
+            {
+                "id": "21c8cab570ae9cd89c3239ed5d14cd58d940cf9d_1",
+                "valid": 1
+            }
+        ],
+        "request": "PUT /_matrix/client/v3/rooms/!wBrUrFDOiWWuZMIUyc:matrix.chowchow/send/m.reaction/txnIda9b8a6cbdf HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$tDUlN-NPR_JL67bHvIOOcbXQXqwz825eJpQGHHLKXrs\",\n            \"key\":\"fuzzstring\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n",
+        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 02 Apr 2026 08:09:27 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n3b\r\n{\"event_id\":\"$mQWDBAIjJ2LhMB2YSWd2wgpN0uQSypLLCnLWM-NDHLU\"}\r\n0\r\n\r\n"
+    },
+    "3666a82357c303dc5f4d8c9b3a0c2324c658e3a5_1__1_1_1": {
+        "verb": "PUT",
+        "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}",
+        "valid": 1,
+        "matching_prefix": [
+            {
+                "id": "32274700258bf66a474ccb0afb9fa1b0d7a6e06d_1",
+                "valid": 1
+            },
+            {
+                "id": "21c8cab570ae9cd89c3239ed5d14cd58d940cf9d_1",
+                "valid": 1
+            },
+            {
+                "id": "faed9ea648c0f7a83e59b90f6d40de7d326754ec_1",
+                "valid": 1
+            }
+        ],
+        "request": "PUT /_matrix/client/v3/rooms/!XxopBMBGMgWNMYXYcq:matrix.chowchow/redact/$d9CQasP7XsfAf0R1zBqN3dGwpfiZizgdaYCyQUDvW_I/txnId6dc3dfa5ca HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8008\r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    \"reason\":\"custom_reason_sdfeewwwwwerfev3\"}\r\n",
+        "response": "HTTP/1.1 200 OK\r\nServer: Synapse/1.145.0\r\nDate: Thu, 02 Apr 2026 08:09:31 GMT\r\nContent-Type: application/json\r\nCache-Control: no-cache, no-store, must-revalidate\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS\r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date\r\nAccess-Control-Expose-Headers: Synapse-Trace-Id, Server\r\nTransfer-Encoding: chunked\r\n\r\n3b\r\n{\"event_id\":\"$aUxpGEsixM0gjW6zt1wv5QPDjglGNkeYrxOd_3ad7W4\"}\r\n0\r\n\r\n"
     }}

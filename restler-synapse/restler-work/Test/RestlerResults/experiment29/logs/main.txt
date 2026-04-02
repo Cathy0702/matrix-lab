@@ -1,28 +1,32 @@
 Random seed: 12345
 Setting fuzzing schemes: directed-smoke-test
-2026-02-26 05:16:28.894: Going to fuzz a set with 6 requests
-2026-02-26 05:16:28.894: Request-0: Value Combinations: 18
-2026-02-26 05:16:28.894: Request-1: Value Combinations: 13
-2026-02-26 05:16:28.894: Request-2: Value Combinations: 3
-2026-02-26 05:16:28.894: Request-3: Value Combinations: 3
-2026-02-26 05:16:28.894: Request-4: Value Combinations: 3
-2026-02-26 05:16:28.894: Request-5: Value Combinations: 2
-2026-02-26 05:16:28.894: Avg. Value Combinations per Request: 7
-2026-02-26 05:16:28.894: Median Value Combinations per Request: 3.0
-2026-02-26 05:16:28.894: Min Value Combinations per Request: 2
-2026-02-26 05:16:28.894: Max Value Combinations per Request: 18
-2026-02-26 05:16:28.894: Total dependencies: 7
+2026-04-02 08:08:56.565: Going to fuzz a set with 10 requests
+2026-04-02 08:08:56.565: Request-0: Value Combinations: 2
+2026-04-02 08:08:56.565: Request-1: Value Combinations: 7
+2026-04-02 08:08:56.565: Request-2: Value Combinations: 2
+2026-04-02 08:08:56.565: Request-3: Value Combinations: 2
+2026-04-02 08:08:56.565: Request-4: Value Combinations: 2
+2026-04-02 08:08:56.565: Request-5: Value Combinations: 2
+2026-04-02 08:08:56.565: Request-6: Value Combinations: 2
+2026-04-02 08:08:56.565: Request-7: Value Combinations: 2
+2026-04-02 08:08:56.565: Request-8: Value Combinations: 2
+2026-04-02 08:08:56.565: Request-9: Value Combinations: 2
+2026-04-02 08:08:56.565: Avg. Value Combinations per Request: 2.5
+2026-04-02 08:08:56.565: Median Value Combinations per Request: 2.0
+2026-04-02 08:08:56.565: Min Value Combinations per Request: 2
+2026-04-02 08:08:56.565: Max Value Combinations per Request: 7
+2026-04-02 08:08:56.565: Total dependencies: 18
 
-2026-02-26 05:16:28.899: Generation: 1 / Sequences Collection Size: 2 
+2026-04-02 08:08:56.570: Generation: 1 / Sequences Collection Size: 1 
 (After directed-smoke-test Extend)
 
 Rendering request 0 from scratch
 
-2026-02-26 05:16:29.149: Request 0
-2026-02-26 05:16:29.149: Endpoint - /_matrix/client/v3/createRoom
-2026-02-26 05:16:29.149: Hex Def - 32274700258bf66a474ccb0afb9fa1b0d7a6e06d
-2026-02-26 05:16:29.149: Sequence length that satisfies dependencies: 1
-2026-02-26 05:16:29.149: Rendering VALID
+2026-04-02 08:08:58.823: Request 0
+2026-04-02 08:08:58.823: Endpoint - /_matrix/client/v3/createRoom
+2026-04-02 08:08:58.823: Hex Def - 32274700258bf66a474ccb0afb9fa1b0d7a6e06d
+2026-04-02 08:08:58.823: Sequence length that satisfies dependencies: 1
+2026-04-02 08:08:58.823: Rendering VALID
 		- restler_static_string: 'POST '
 		- restler_static_string: ''
 		- restler_static_string: '/'
@@ -43,64 +47,39 @@ Rendering request 0 from scratch
 		- restler_static_string: '\r\n'
 		- restler_static_string: '{'
 		- restler_static_string: '\n    "name":'
-		+ restler_custom_payload: ['"aaaaaaa"', '"bbbbbbb"']
+		- restler_custom_payload: '"custom_name_123r3fskmqoiwmfqi423orjso"'
 		- restler_static_string: ',\n    "preset":'
 		+ restler_fuzzable_group: ['private_chat', 'public_chat', 'trusted_private_chat']
 		- restler_static_string: ',\n    "topic":'
-		- restler_fuzzable_string: '"fuzzstring"'
+		- restler_custom_payload: '"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee"'
 		- restler_static_string: ',\n    "visibility":'
 		+ restler_fuzzable_group: ['public', 'private']
 		- restler_static_string: '}'
 		- restler_static_string: '\r\n'
 
-Rendering request 1 from scratch
-
-2026-02-26 05:16:29.157: Request 1
-2026-02-26 05:16:29.157: Endpoint - /_matrix/client/v3/account/whoami
-2026-02-26 05:16:29.157: Hex Def - f4c87d3ec7c3944f3b41aee3f69a283421ce11bb
-2026-02-26 05:16:29.157: Sequence length that satisfies dependencies: 1
-2026-02-26 05:16:29.157: Rendering VALID
-		- restler_static_string: 'GET '
-		- restler_static_string: ''
-		- restler_static_string: '/'
-		- restler_static_string: '_matrix'
-		- restler_static_string: '/'
-		- restler_static_string: 'client'
-		- restler_static_string: '/'
-		- restler_static_string: 'v3'
-		- restler_static_string: '/'
-		- restler_static_string: 'account'
-		- restler_static_string: '/'
-		- restler_static_string: 'whoami'
-		- restler_static_string: ' HTTP/1.1\r\n'
-		- restler_static_string: 'Accept: application/json\r\n'
-		- restler_static_string: 'Host: localhost:8008\r\n'
-		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval', 'token_location']
-		- restler_static_string: '\r\n'
-
-2026-02-26 05:16:29.157: Generation: 1 / Sequences Collection Size: 2 
+2026-04-02 08:08:58.823: Generation: 1 / Sequences Collection Size: 1 
 (After directed-smoke-test Render)
 
-2026-02-26 05:16:29.157: Final Swagger spec coverage: 2 / 6
-2026-02-26 05:16:29.157: Rendered requests: 2 / 6
-2026-02-26 05:16:29.157: Rendered requests with "valid" status codes: 2 / 2
-2026-02-26 05:16:29.157: Num fully valid requests (no resource creation failures): 2
-2026-02-26 05:16:29.157: Num requests not rendered due to invalid sequence re-renders: 0
-2026-02-26 05:16:29.157: Num invalid requests caused by failed resource creations: 0
-2026-02-26 05:16:29.157: Total Creations of Dyn Objects: 1
-2026-02-26 05:16:29.157: Total Requests Sent: {'gc': 0, 'main_driver': 2}
-2026-02-26 05:16:29.157: Bug Buckets: {}
-2026-02-26 05:16:29.159: Generation: 2 / Sequences Collection Size: 3 
+2026-04-02 08:08:58.824: Final Swagger spec coverage: 1 / 10
+2026-04-02 08:08:58.824: Rendered requests: 1 / 10
+2026-04-02 08:08:58.824: Rendered requests with "valid" status codes: 1 / 1
+2026-04-02 08:08:58.824: Num fully valid requests (no resource creation failures): 1
+2026-04-02 08:08:58.824: Num requests not rendered due to invalid sequence re-renders: 0
+2026-04-02 08:08:58.824: Num invalid requests caused by failed resource creations: 0
+2026-04-02 08:08:58.824: Total Creations of Dyn Objects: 1
+2026-04-02 08:08:58.824: Total Requests Sent: {'gc': 0, 'main_driver': 1}
+2026-04-02 08:08:58.824: Bug Buckets: {}
+2026-04-02 08:08:58.826: Generation: 2 / Sequences Collection Size: 3 
 (After directed-smoke-test Extend)
 
-Found a matching prefix of length 1 for request 2 with previous request 0
+Found a matching prefix of length 1 for request 1 with previous request 0
 	and re-using that VALID prefix (1 rendering combinations)
 
-2026-02-26 05:16:29.414: Request 2
-2026-02-26 05:16:29.414: Endpoint - /_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}
-2026-02-26 05:16:29.414: Hex Def - 21c8cab570ae9cd89c3239ed5d14cd58d940cf9d
-2026-02-26 05:16:29.414: Sequence length that satisfies dependencies: 2
-2026-02-26 05:16:29.414: Rendering VALID
+2026-04-02 08:09:01.896: Request 1
+2026-04-02 08:09:01.896: Endpoint - /_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}
+2026-04-02 08:09:01.896: Hex Def - 21c8cab570ae9cd89c3239ed5d14cd58d940cf9d
+2026-04-02 08:09:01.896: Sequence length that satisfies dependencies: 2
+2026-04-02 08:09:01.896: Rendering VALID
 		- restler_static_string: 'PUT '
 		- restler_static_string: ''
 		- restler_static_string: '/'
@@ -129,20 +108,20 @@ Found a matching prefix of length 1 for request 2 with previous request 0
 		- restler_static_string: '\r\n'
 		- restler_static_string: '{'
 		- restler_static_string: '\n    "body":'
-		+ restler_custom_payload: ['"fuzzstring"', '"fuzzstring2"', '"fuzzstring3"', '"fuzzstring4"', '"fuzzstring5"', '"fuzzstring6"', '"fuzzstring7"', '"fuzzstring8"', '"fuzzstring9"']
+		- restler_custom_payload: '"custom_body_fkqoifoqf0q39fj0qiefnlb;af"'
 		- restler_static_string: ',\n    "msgtype":'
 		- restler_fuzzable_group: 'm.text'
 		- restler_static_string: '}'
 		- restler_static_string: '\r\n'
 
-Found a matching prefix of length 1 for request 3 with previous request 0
+Found a matching prefix of length 1 for request 2 with previous request 0
 	and re-using that VALID prefix (1 rendering combinations)
 
-2026-02-26 05:16:29.899: Request 3
-2026-02-26 05:16:29.899: Endpoint - /_matrix/client/v3/rooms/{room_id}/leave
-2026-02-26 05:16:29.899: Hex Def - 553e6a0dd7a5244842d5d238ebb62dafbc9d3fb2
-2026-02-26 05:16:29.899: Sequence length that satisfies dependencies: 2
-2026-02-26 05:16:29.899: Rendering VALID
+2026-04-02 08:09:07.250: Request 2
+2026-04-02 08:09:07.250: Endpoint - /_matrix/client/v3/rooms/{room_id}/leave
+2026-04-02 08:09:07.250: Hex Def - 553e6a0dd7a5244842d5d238ebb62dafbc9d3fb2
+2026-04-02 08:09:07.250: Sequence length that satisfies dependencies: 2
+2026-04-02 08:09:07.250: Rendering VALID
 		- restler_static_string: 'POST '
 		- restler_static_string: ''
 		- restler_static_string: '/'
@@ -167,18 +146,18 @@ Found a matching prefix of length 1 for request 3 with previous request 0
 		- restler_static_string: '\r\n'
 		- restler_static_string: '{'
 		- restler_static_string: '\n    "reason":'
-		+ restler_fuzzable_string: ['"Saying farewell - thanks for the support!"', '"fuzzstring"']
+		- restler_custom_payload: '"custom_reason_sdfeewwwwwerfev3"'
 		- restler_static_string: '}'
 		- restler_static_string: '\r\n'
 
-Found a matching prefix of length 1 for request 4 with previous request 0
+Found a matching prefix of length 1 for request 3 with previous request 0
 	and re-using that VALID prefix (1 rendering combinations)
 
-2026-02-26 05:16:30.454: Request 4
-2026-02-26 05:16:30.454: Endpoint - /_matrix/client/v3/rooms/{room_id}/join
-2026-02-26 05:16:30.454: Hex Def - 613a7dc65f79c151914b3b8e4f192824d90cbbfc
-2026-02-26 05:16:30.454: Sequence length that satisfies dependencies: 2
-2026-02-26 05:16:30.454: Rendering VALID
+2026-04-02 08:09:12.195: Request 3
+2026-04-02 08:09:12.195: Endpoint - /_matrix/client/v3/rooms/{room_id}/join
+2026-04-02 08:09:12.195: Hex Def - 613a7dc65f79c151914b3b8e4f192824d90cbbfc
+2026-04-02 08:09:12.195: Sequence length that satisfies dependencies: 2
+2026-04-02 08:09:12.195: Rendering VALID
 		- restler_static_string: 'POST '
 		- restler_static_string: ''
 		- restler_static_string: '/'
@@ -203,33 +182,59 @@ Found a matching prefix of length 1 for request 4 with previous request 0
 		- restler_static_string: '\r\n'
 		- restler_static_string: '{'
 		- restler_static_string: '\n    "reason":'
-		+ restler_fuzzable_string: ['"Looking for support"', '"fuzzstring"']
+		- restler_custom_payload: '"custom_reason_sdfeewwwwwerfev3"'
 		- restler_static_string: '}'
 		- restler_static_string: '\r\n'
 
-2026-02-26 05:16:30.455: Generation: 2 / Sequences Collection Size: 3 
+2026-04-02 08:09:12.195: Generation: 2 / Sequences Collection Size: 3 
 (After directed-smoke-test Render)
 
-2026-02-26 05:16:30.455: Final Swagger spec coverage: 5 / 6
-2026-02-26 05:16:30.455: Rendered requests: 5 / 6
-2026-02-26 05:16:30.455: Rendered requests with "valid" status codes: 5 / 5
-2026-02-26 05:16:30.455: Num fully valid requests (no resource creation failures): 5
-2026-02-26 05:16:30.455: Num requests not rendered due to invalid sequence re-renders: 0
-2026-02-26 05:16:30.455: Num invalid requests caused by failed resource creations: 0
-2026-02-26 05:16:30.455: Total Creations of Dyn Objects: 5
-2026-02-26 05:16:30.455: Total Requests Sent: {'gc': 0, 'main_driver': 8}
-2026-02-26 05:16:30.455: Bug Buckets: {}
-2026-02-26 05:16:30.456: Generation: 3 / Sequences Collection Size: 1 
+2026-04-02 08:09:12.195: Final Swagger spec coverage: 4 / 10
+2026-04-02 08:09:12.195: Rendered requests: 4 / 10
+2026-04-02 08:09:12.195: Rendered requests with "valid" status codes: 4 / 4
+2026-04-02 08:09:12.195: Num fully valid requests (no resource creation failures): 4
+2026-04-02 08:09:12.195: Num requests not rendered due to invalid sequence re-renders: 0
+2026-04-02 08:09:12.195: Num invalid requests caused by failed resource creations: 0
+2026-04-02 08:09:12.195: Total Creations of Dyn Objects: 5
+2026-04-02 08:09:12.195: Total Requests Sent: {'gc': 0, 'main_driver': 7}
+2026-04-02 08:09:12.195: Bug Buckets: {}
+2026-04-02 08:09:12.198: Generation: 3 / Sequences Collection Size: 5 
 (After directed-smoke-test Extend)
 
-Found a matching prefix of length 2 for request 5 with previous request 2
+Found a matching prefix of length 2 for request 4 with previous request 1
 	and re-using that VALID prefix (1 rendering combinations)
 
-2026-02-26 05:16:30.796: Request 5
-2026-02-26 05:16:30.796: Endpoint - /_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}
-2026-02-26 05:16:30.796: Hex Def - a7a1c46328f5d8e4a9ff59d4b315f0b920be1805
-2026-02-26 05:16:30.796: Sequence length that satisfies dependencies: 3
-2026-02-26 05:16:30.796: Rendering VALID
+2026-04-02 08:09:15.147: Request 4
+2026-04-02 08:09:15.147: Endpoint - /_matrix/client/v3/events/{event_id}
+2026-04-02 08:09:15.147: Hex Def - 5d9f7790114833d44d157d3bb819e4634a3ff14f
+2026-04-02 08:09:15.147: Sequence length that satisfies dependencies: 3
+2026-04-02 08:09:15.148: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: '_matrix'
+		- restler_static_string: '/'
+		- restler_static_string: 'client'
+		- restler_static_string: '/'
+		- restler_static_string: 'v3'
+		- restler_static_string: '/'
+		- restler_static_string: 'events'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM__matrix_client_v3_rooms__room_id__send_m_room_message__txnId__put_event_id_READER_DELIM'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8008\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval', 'token_location']
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 2 for request 5 with previous request 1
+	and re-using that VALID prefix (1 rendering combinations)
+
+2026-04-02 08:09:18.287: Request 5
+2026-04-02 08:09:18.287: Endpoint - /_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}
+2026-04-02 08:09:18.287: Hex Def - a7a1c46328f5d8e4a9ff59d4b315f0b920be1805
+2026-04-02 08:09:18.287: Sequence length that satisfies dependencies: 3
+2026-04-02 08:09:18.287: Rendering VALID
 		- restler_static_string: 'PUT '
 		- restler_static_string: ''
 		- restler_static_string: '/'
@@ -258,31 +263,188 @@ Found a matching prefix of length 2 for request 5 with previous request 2
 		- restler_static_string: '\r\n'
 		- restler_static_string: '{'
 		- restler_static_string: '\n    "reason":'
-		+ restler_fuzzable_string: ['"Indecent material"', '"fuzzstring"']
+		- restler_custom_payload: '"custom_reason_sdfeewwwwwerfev3"'
 		- restler_static_string: '}'
 		- restler_static_string: '\r\n'
 
-2026-02-26 05:16:30.796: Generation: 3 / Sequences Collection Size: 1 
+Found a matching prefix of length 2 for request 6 with previous request 1
+	and re-using that VALID prefix (1 rendering combinations)
+
+2026-04-02 08:09:21.263: Request 6
+2026-04-02 08:09:21.263: Endpoint - /_matrix/client/v1/rooms/{room_id}/relations/{event_id}
+2026-04-02 08:09:21.263: Hex Def - c95d0e39b748d68f1bb4dd0560f4d753787173e4
+2026-04-02 08:09:21.263: Sequence length that satisfies dependencies: 3
+2026-04-02 08:09:21.263: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: '_matrix'
+		- restler_static_string: '/'
+		- restler_static_string: 'client'
+		- restler_static_string: '/'
+		- restler_static_string: 'v1'
+		- restler_static_string: '/'
+		- restler_static_string: 'rooms'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM__matrix_client_v3_createRoom_post_room_id_READER_DELIM'
+		- restler_static_string: '/'
+		- restler_static_string: 'relations'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM__matrix_client_v3_rooms__room_id__send_m_room_message__txnId__put_event_id_READER_DELIM'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8008\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval', 'token_location']
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 2 for request 7 with previous request 2
+	and re-using that VALID prefix (1 rendering combinations)
+
+2026-04-02 08:09:24.505: Request 7
+2026-04-02 08:09:24.505: Endpoint - /_matrix/client/v3/rooms/{room_id}/forget
+2026-04-02 08:09:24.505: Hex Def - d04bfd243a6f2bc2831e33d10440342a13dbdea3
+2026-04-02 08:09:24.505: Sequence length that satisfies dependencies: 3
+2026-04-02 08:09:24.505: Rendering VALID
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: '_matrix'
+		- restler_static_string: '/'
+		- restler_static_string: 'client'
+		- restler_static_string: '/'
+		- restler_static_string: 'v3'
+		- restler_static_string: '/'
+		- restler_static_string: 'rooms'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM__matrix_client_v3_createRoom_post_room_id_READER_DELIM'
+		- restler_static_string: '/'
+		- restler_static_string: 'forget'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8008\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval', 'token_location']
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 2 for request 8 with previous request 1
+	and re-using that VALID prefix (1 rendering combinations)
+
+2026-04-02 08:09:27.660: Request 8
+2026-04-02 08:09:27.660: Endpoint - /_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}
+2026-04-02 08:09:27.661: Hex Def - faed9ea648c0f7a83e59b90f6d40de7d326754ec
+2026-04-02 08:09:27.661: Sequence length that satisfies dependencies: 3
+2026-04-02 08:09:27.661: Rendering VALID
+		- restler_static_string: 'PUT '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: '_matrix'
+		- restler_static_string: '/'
+		- restler_static_string: 'client'
+		- restler_static_string: '/'
+		- restler_static_string: 'v3'
+		- restler_static_string: '/'
+		- restler_static_string: 'rooms'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM__matrix_client_v3_createRoom_post_room_id_READER_DELIM'
+		- restler_static_string: '/'
+		- restler_static_string: 'send'
+		- restler_static_string: '/'
+		- restler_static_string: 'm.reaction'
+		- restler_static_string: '/'
+		- restler_custom_payload_uuid4_suffix: 't'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8008\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval', 'token_location']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "m.relates_to":\n        {\n            "event_id":'
+		- restler_static_string: '"_READER_DELIM__matrix_client_v3_rooms__room_id__send_m_room_message__txnId__put_event_id_READER_DELIM"'
+		- restler_static_string: ',\n            "key":'
+		- restler_fuzzable_string: '"fuzzstring"'
+		- restler_static_string: ',\n            "rel_type":'
+		- restler_fuzzable_group: 'm.annotation'
+		- restler_static_string: '\n        }\n    }'
+		- restler_static_string: '\r\n'
+
+2026-04-02 08:09:27.661: Generation: 3 / Sequences Collection Size: 5 
 (After directed-smoke-test Render)
 
-2026-02-26 05:16:30.797: Final Swagger spec coverage: 6 / 6
-2026-02-26 05:16:30.797: Rendered requests: 6 / 6
-2026-02-26 05:16:30.797: Rendered requests with "valid" status codes: 6 / 6
-2026-02-26 05:16:30.797: Num fully valid requests (no resource creation failures): 6
-2026-02-26 05:16:30.797: Num requests not rendered due to invalid sequence re-renders: 0
-2026-02-26 05:16:30.797: Num invalid requests caused by failed resource creations: 0
-2026-02-26 05:16:30.797: Total Creations of Dyn Objects: 7
-2026-02-26 05:16:30.797: Total Requests Sent: {'gc': 0, 'main_driver': 11}
-2026-02-26 05:16:30.797: Bug Buckets: {}
+2026-04-02 08:09:27.661: Final Swagger spec coverage: 9 / 10
+2026-04-02 08:09:27.661: Rendered requests: 9 / 10
+2026-04-02 08:09:27.661: Rendered requests with "valid" status codes: 9 / 9
+2026-04-02 08:09:27.661: Num fully valid requests (no resource creation failures): 9
+2026-04-02 08:09:27.661: Num requests not rendered due to invalid sequence re-renders: 0
+2026-04-02 08:09:27.661: Num invalid requests caused by failed resource creations: 0
+2026-04-02 08:09:27.661: Total Creations of Dyn Objects: 15
+2026-04-02 08:09:27.661: Total Requests Sent: {'gc': 0, 'main_driver': 22}
+2026-04-02 08:09:27.661: Bug Buckets: {}
+2026-04-02 08:09:27.664: Generation: 4 / Sequences Collection Size: 1 
+(After directed-smoke-test Extend)
+
+Found a matching prefix of length 3 for request 9 with previous request 8
+	and re-using that VALID prefix (1 rendering combinations)
+
+2026-04-02 08:09:31.308: Request 9
+2026-04-02 08:09:31.308: Endpoint - /_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}
+2026-04-02 08:09:31.308: Hex Def - 3666a82357c303dc5f4d8c9b3a0c2324c658e3a5
+2026-04-02 08:09:31.308: Sequence length that satisfies dependencies: 4
+2026-04-02 08:09:31.309: Rendering VALID
+		- restler_static_string: 'PUT '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: '_matrix'
+		- restler_static_string: '/'
+		- restler_static_string: 'client'
+		- restler_static_string: '/'
+		- restler_static_string: 'v3'
+		- restler_static_string: '/'
+		- restler_static_string: 'rooms'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM__matrix_client_v3_createRoom_post_room_id_READER_DELIM'
+		- restler_static_string: '/'
+		- restler_static_string: 'redact'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM__matrix_client_v3_rooms__room_id__send_m_reaction__txnId__put_event_id_READER_DELIM'
+		- restler_static_string: '/'
+		- restler_custom_payload_uuid4_suffix: 't'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8008\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval', 'token_location']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "reason":'
+		- restler_custom_payload: '"custom_reason_sdfeewwwwwerfev3"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2026-04-02 08:09:31.309: Generation: 4 / Sequences Collection Size: 1 
+(After directed-smoke-test Render)
+
+2026-04-02 08:09:31.309: Final Swagger spec coverage: 10 / 10
+2026-04-02 08:09:31.309: Rendered requests: 10 / 10
+2026-04-02 08:09:31.309: Rendered requests with "valid" status codes: 10 / 10
+2026-04-02 08:09:31.309: Num fully valid requests (no resource creation failures): 10
+2026-04-02 08:09:31.309: Num requests not rendered due to invalid sequence re-renders: 0
+2026-04-02 08:09:31.309: Num invalid requests caused by failed resource creations: 0
+2026-04-02 08:09:31.309: Total Creations of Dyn Objects: 18
+2026-04-02 08:09:31.309: Total Requests Sent: {'gc': 0, 'main_driver': 26}
+2026-04-02 08:09:31.309: Bug Buckets: {}
 
 Testing completed -- below are the final stats:
 
-2026-02-26 05:16:30.800: Final Swagger spec coverage: 6 / 6
-2026-02-26 05:16:30.800: Rendered requests: 6 / 6
-2026-02-26 05:16:30.800: Rendered requests with "valid" status codes: 6 / 6
-2026-02-26 05:16:30.800: Num fully valid requests (no resource creation failures): 6
-2026-02-26 05:16:30.800: Num requests not rendered due to invalid sequence re-renders: 0
-2026-02-26 05:16:30.800: Num invalid requests caused by failed resource creations: 0
-2026-02-26 05:16:30.800: Total Creations of Dyn Objects: 7
-2026-02-26 05:16:30.800: Total Requests Sent: {'gc': 0, 'main_driver': 11}
-2026-02-26 05:16:30.800: Bug Buckets: {}
+2026-04-02 08:09:31.313: Final Swagger spec coverage: 10 / 10
+2026-04-02 08:09:31.313: Rendered requests: 10 / 10
+2026-04-02 08:09:31.313: Rendered requests with "valid" status codes: 10 / 10
+2026-04-02 08:09:31.313: Num fully valid requests (no resource creation failures): 10
+2026-04-02 08:09:31.313: Num requests not rendered due to invalid sequence re-renders: 0
+2026-04-02 08:09:31.313: Num invalid requests caused by failed resource creations: 0
+2026-04-02 08:09:31.313: Total Creations of Dyn Objects: 18
+2026-04-02 08:09:31.313: Total Requests Sent: {'gc': 0, 'main_driver': 26}
+2026-04-02 08:09:31.313: Bug Buckets: {}

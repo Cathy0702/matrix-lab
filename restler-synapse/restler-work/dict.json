@@ -28,24 +28,15 @@
     "{ \"fuzz\": false }"
   ],
   "restler_custom_payload": {
-    "name": [
-      "aaaaaaa",
-      "bbbbbbb"
-    ],
-    "body": [
-      "fuzzstring",
-      "fuzzstring2",
-      "fuzzstring3",
-      "fuzzstring4",
-      "fuzzstring5",
-      "fuzzstring6",
-      "fuzzstring7",
-      "fuzzstring8",
-      "fuzzstring9"
-    ]
+    "name": ["custom_name_123r3fskmqoiwmfqi423orjso"],
+    "body": ["custom_body_fkqoifoqf0q39fj0qiefnlb;af"],
+    "topic": ["custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee"],
+    "reason": ["custom_reason_sdfeewwwwwerfev3"]
   },
   "restler_custom_payload_unquoted": {},
-  "restler_custom_payload_uuid4_suffix": {},
+  "restler_custom_payload_uuid4_suffix": {
+    "txnId": "txnId"
+  },
   "restler_custom_payload_header": {},
   "restler_custom_payload_query": {}
 }

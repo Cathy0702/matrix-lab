@@ -7,11 +7,18 @@ from __future__ import print_function
 from checkers.checker_base import *
 import time
 import uuid
+from random import Random
 
 from engine.bug_bucketing import BugBuckets
 import engine.dependencies as dependencies
 import engine.core.sequences as sequences
 from utils.logger import raw_network_logging as RAW_LOGGING
+
+random_seed=time.time()
+random_gen = Random(random_seed)
+
+def rand_str(chars: str) -> str:
+    return ''.join(random_gen.choices(chars, k=random_gen.randint(10000, 100000)))
 
 class InvalidDynamicObjectChecker(CheckerBase):
     """ Checker for invalid dynamic object violations. """
@@ -114,11 +121,17 @@ class InvalidDynamicObjectChecker(CheckerBase):
         for i in range(1, len(data), 2):
             consumer_types.append(dependencies.get_variable(data[i]))
 
-        default_invalids = [f'{VALID_REPLACE_STR}?injected_query_string=123',\
-                            f'{VALID_REPLACE_STR}/!*?/',\
-                            f'{VALID_REPLACE_STR}?**)?',\
-                            f'{VALID_REPLACE_STR}/{VALID_REPLACE_STR}',\
-                            '{!!!?}']
+        # default_invalids = [f'{VALID_REPLACE_STR}?injected_query_string=123',\
+        #                     f'{VALID_REPLACE_STR}/!*?/',\
+        #                     f'{VALID_REPLACE_STR}?**)?',\
+        #                     f'{VALID_REPLACE_STR}/{VALID_REPLACE_STR}',\
+        #                     '{!!!?}']
+        default_invalids = [
+            f"{VALID_REPLACE_STR}{rand_str(string.ascii_letters + string.digits)}",
+            f"{VALID_REPLACE_STR}{rand_str(string.digits)}",
+            "//////",
+            f"//{rand_str(string.digits)}//"
+        ]
 
         invalid_strs = []
         if not Settings().get_checker_arg(self._friendly_name, 'no_defaults'):

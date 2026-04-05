@@ -4,6 +4,7 @@
 # The ordering of these checkers is expected to remain consistent.
 # If a new checker is added or a new ordering is deemed necessary,
 # the unit tests and baseline logs will need to be updated as well.
+from checkers.forget_join_checker import *
 from checkers.redact_content_checker import *
 from checkers.leave_send_checker import *
 from checkers.leakage_rule_checker import *

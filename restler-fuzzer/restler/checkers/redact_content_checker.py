@@ -29,7 +29,7 @@ class RedactContentChecker(CheckerBase):
             return
 
         self._checker_log.checker_print(
-            f"RedactContentChecker: Detected redact endpoint in last request: {endpoint}"
+            f"Detected redact endpoint in last request: {endpoint}"
         )
 
         targets = self._get_followup_requests(endpoint)
@@ -48,10 +48,16 @@ class RedactContentChecker(CheckerBase):
 
             if "events" in endpoint and event_marker and event_marker in endpoint.split("/")[-1] :
                 targets.append(copy.copy(request))
+                self._checker_log.checker_print(
+                    f"  Prepare to send request: {endpoint}"
+                )
                 continue
 
-            if "relations" in endpoint:
+            if "relations" in endpoint and event_marker == "send_m_reaction":
                 targets.append(copy.copy(request))
+                self._checker_log.checker_print(
+                    f"  Prepare to send request: {endpoint}"
+                )
 
         return targets
 

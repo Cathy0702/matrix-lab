@@ -44,7 +44,7 @@ case "$1" in
       -v $(pwd)/restler-work:/work \
       -w /work \
       restler \
-      /RESTler/restler/Restler fuzz --grammar_file /work/Compile/grammar.py --dictionary_file /work/Compile/dict.json --settings /work/Compile/engine_settings.json --no_ssl --time_budget 8
+      /RESTler/restler/Restler fuzz --grammar_file /work/Compile/grammar.py --dictionary_file /work/Compile/dict.json --settings /work/Compile/engine_settings.json --no_ssl --time_budget 10
     ;;
   *)
     echo "Usage: $0 {compile|test}"

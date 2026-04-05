@@ -1,8 +1,6 @@
 {
-  "failedRequestsCount": 1,
+  "failedRequestsCount": 0,
   "bugCount": 0,
-  "codeCounts": {
-    "0": 1
-  },
+  "codeCounts": {},
   "errorBuckets": {}
 }

@@ -853,7 +853,7 @@
     },
     {
       "id": {
-        "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}",
+        "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}",
         "method": "Put"
       },
       "method": "Put",
@@ -1056,7 +1056,7 @@
     },
     {
       "id": {
-        "endpoint": "/_matrix/client/v3/events/{event_id}",
+        "endpoint": "/_matrix/client/v3/events/{event_id_msg}",
         "method": "Get"
       },
       "method": "Get",
@@ -1120,6 +1120,122 @@
           "DynamicObject": {
             "primitiveType": "String",
             "variableName": "__matrix_client_v3_rooms__room_id__send_m_room_message__txnId__put_event_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:8008"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/_matrix/client/v3/events/{event_id_reaction}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "_matrix"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "client"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v3"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "events"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "String",
+            "variableName": "__matrix_client_v3_rooms__room_id__send_m_reaction__txnId__put_event_id",
             "isWriter": false
           }
         }
@@ -1599,7 +1715,7 @@
     },
     {
       "id": {
-        "endpoint": "/_matrix/client/v1/rooms/{room_id}/relations/{event_id}",
+        "endpoint": "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}",
         "method": "Get"
       },
       "method": "Get",

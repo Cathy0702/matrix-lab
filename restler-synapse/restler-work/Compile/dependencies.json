@@ -1,12 +1,12 @@
 {
-  "/_matrix/client/v1/rooms/{room_id}/relations/{event_id}": {
+  "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}": {
     "GET": {
       "Path": [
         {
           "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
           "producer_method": "PUT",
           "producer_resource_name": "event_id",
-          "consumer_param": "event_id"
+          "consumer_param": "event_id_msg"
         },
         {
           "producer_endpoint": "/_matrix/client/v3/createRoom",
@@ -47,14 +47,26 @@
       ]
     }
   },
-  "/_matrix/client/v3/events/{event_id}": {
+  "/_matrix/client/v3/events/{event_id_msg}": {
     "GET": {
       "Path": [
         {
           "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
           "producer_method": "PUT",
           "producer_resource_name": "event_id",
-          "consumer_param": "event_id"
+          "consumer_param": "event_id_msg"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/events/{event_id_reaction}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "event_id",
+          "consumer_param": "event_id_reaction"
         }
       ]
     }
@@ -111,14 +123,14 @@
       ]
     }
   },
-  "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}": {
+  "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}": {
     "PUT": {
       "Path": [
         {
-          "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}",
+          "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
           "producer_method": "PUT",
           "producer_resource_name": "event_id",
-          "consumer_param": "event_id_reaction"
+          "consumer_param": "event_id_msg"
         },
         {
           "producer_endpoint": "/_matrix/client/v3/createRoom",
@@ -143,14 +155,14 @@
       ]
     }
   },
-  "/_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}": {
+  "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}": {
     "PUT": {
       "Path": [
         {
-          "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
+          "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}",
           "producer_method": "PUT",
           "producer_resource_name": "event_id",
-          "consumer_param": "event_id"
+          "consumer_param": "event_id_reaction"
         },
         {
           "producer_endpoint": "/_matrix/client/v3/createRoom",

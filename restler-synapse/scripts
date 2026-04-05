@@ -14,7 +14,6 @@ curl -s -X POST "http://localhost:8008/_matrix/client/v3/createRoom" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "my secret room",
-    "present": "trusted_private_chat",
     "visibility": "private" 
   }'
 
@@ -28,7 +27,7 @@ curl -s -X POST 'http://localhost:8008/_matrix/client/v3/knock/!ldfBDKTmXuHCbpTr
     "reason": "my secret room"
   }'
 
-curl -s 'http://198.162.52.40:8008/_matrix/client/v3/events/$FS0iu5Fz7y5Txhqy7KmNfq2pq7YjCYj7CNyeWAj1bto' \
+curl -s 'http://198.162.52.40:8008/_matrix/client/v3/events/$nePuf9zxgq0j4mLBsKS_XxysnkAFwnCSMqSBKDYXL2s' \
   -H "Authorization: Bearer $TOKEN"
 
 curl -s 'http://localhost:8008/_matrix/client/v3/joined_rooms' \
@@ -87,6 +86,9 @@ curl -X PUT \
 curl -s 'http://198.162.52.40:8008/_matrix/client/v3/sync' \
   -H "Authorization: Bearer $TOKEN"
 
+curl -s "http://198.162.52.40:8008/_matrix/client/v1/rooms/$ROOM_ID/relations/$EVENT_ID" \
+  -H "Authorization: Bearer $TOKEN"
+
 curl -X PUT \
 'http://localhost:8008/_matrix/client/v3/rooms/!aimbxNpoYOGlQOoCpC:matrix.chowchow/send/m.room.message/txnid_img1' \
   -H "Authorization: Bearer $TOKEN" \
@@ -99,7 +101,7 @@ curl -X PUT \
   }'
 
 curl -X PUT \
-  'http://localhost:8008/_matrix/client/v3/rooms/!aimbxNpoYOGlQOoCpC:matrix.chowchow/redact/$RMbu81iRz4QQJhFflelBhwJZk_yjQt7DCCD-NnXp2Qc/txni_redact_img' \
+  "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/redact/$ngajhXbv7u-hPshkWGqbqpolUeF_OLe-8YY95cFM1Ng/txni_rddedact_img" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{

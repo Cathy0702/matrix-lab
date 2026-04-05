@@ -56,10 +56,10 @@ class RedactContentChecker(CheckerBase):
         return targets
 
     def _extract_event_marker(self, endpoint):
-        if "event_id_msg" in endpoint:
-            return "event_id_msg"
-        if "event_id_reaction" in endpoint:
-            return "event_id_reaction"
+        if "send_m_room_message" in endpoint:
+            return "send_m_room_message"
+        if "send_m_reaction" in endpoint:
+            return "send_m_reaction"
         return None
 
     def _send_extended_reqs(self, targets):

@@ -8,6 +8,90 @@
         },
         "ResourceReference": {
           "PathResource": {
+            "name": "room_id",
+            "pathToParameter": [
+              "_matrix",
+              "client",
+              "v1",
+              "rooms"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "rooms",
+        "PathContainerName": "relations",
+        "CandidateTypeNames": [
+          "room"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "room_id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path",
+      "annotation": {
+        "producerId": {
+          "endpoint": "/_matrix/client/v3/createRoom",
+          "method": "Post"
+        },
+        "producerParameter": {
+          "ResourceName": "room_id"
+        },
+        "consumerParameter": {
+          "ResourceName": "room_id"
+        }
+      }
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/_matrix/client/v3/createRoom",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "room_id",
+              "fullPath": {
+                "path": [
+                  "room_id"
+                ]
+              }
+            }
+          },
+          "ContainerName": "createRoom",
+          "PathContainerName": "createRoom",
+          "CandidateTypeNames": [
+            "create__room"
+          ],
+          "AccessPath": "room_id",
+          "AccessPathParts": {
+            "path": [
+              "room_id"
+            ]
+          },
+          "ResourceName": "room_id",
+          "ProducerParameterName": "id",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
             "name": "event_id_msg",
             "pathToParameter": [
               "_matrix",
@@ -78,90 +162,6 @@
             ]
           },
           "ResourceName": "event_id",
-          "ProducerParameterName": "id",
-          "IsNestedBodyResource": false,
-          "PrimitiveType": "String"
-        }
-      }
-    }
-  },
-  {
-    "consumer": {
-      "id": {
-        "RequestId": {
-          "endpoint": "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}",
-          "method": "Get"
-        },
-        "ResourceReference": {
-          "PathResource": {
-            "name": "room_id",
-            "pathToParameter": [
-              "_matrix",
-              "client",
-              "v1",
-              "rooms"
-            ],
-            "responsePath": {
-              "path": []
-            }
-          }
-        },
-        "ContainerName": "rooms",
-        "PathContainerName": "relations",
-        "CandidateTypeNames": [
-          "room"
-        ],
-        "AccessPathParts": {
-          "path": []
-        },
-        "ResourceName": "room_id",
-        "ProducerParameterName": "id",
-        "IsNestedBodyResource": false,
-        "PrimitiveType": "String"
-      },
-      "parameterKind": "Path",
-      "annotation": {
-        "producerId": {
-          "endpoint": "/_matrix/client/v3/createRoom",
-          "method": "Post"
-        },
-        "producerParameter": {
-          "ResourceName": "room_id"
-        },
-        "consumerParameter": {
-          "ResourceName": "room_id"
-        }
-      }
-    },
-    "producer": {
-      "ResponseObject": {
-        "id": {
-          "RequestId": {
-            "endpoint": "/_matrix/client/v3/createRoom",
-            "method": "Post"
-          },
-          "ResourceReference": {
-            "BodyResource": {
-              "name": "room_id",
-              "fullPath": {
-                "path": [
-                  "room_id"
-                ]
-              }
-            }
-          },
-          "ContainerName": "createRoom",
-          "PathContainerName": "createRoom",
-          "CandidateTypeNames": [
-            "create__room"
-          ],
-          "AccessPath": "room_id",
-          "AccessPathParts": {
-            "path": [
-              "room_id"
-            ]
-          },
-          "ResourceName": "room_id",
           "ProducerParameterName": "id",
           "IsNestedBodyResource": false,
           "PrimitiveType": "String"
@@ -867,6 +867,89 @@
         },
         "ResourceReference": {
           "PathResource": {
+            "name": "room_id",
+            "pathToParameter": [
+              "_matrix",
+              "client",
+              "v3",
+              "rooms"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "rooms",
+        "CandidateTypeNames": [
+          "room"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "room_id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path",
+      "annotation": {
+        "producerId": {
+          "endpoint": "/_matrix/client/v3/createRoom",
+          "method": "Post"
+        },
+        "producerParameter": {
+          "ResourceName": "room_id"
+        },
+        "consumerParameter": {
+          "ResourceName": "room_id"
+        }
+      }
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/_matrix/client/v3/createRoom",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "room_id",
+              "fullPath": {
+                "path": [
+                  "room_id"
+                ]
+              }
+            }
+          },
+          "ContainerName": "createRoom",
+          "PathContainerName": "createRoom",
+          "CandidateTypeNames": [
+            "create__room"
+          ],
+          "AccessPath": "room_id",
+          "AccessPathParts": {
+            "path": [
+              "room_id"
+            ]
+          },
+          "ResourceName": "room_id",
+          "ProducerParameterName": "id",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "PathResource": {
             "name": "event_id_msg",
             "pathToParameter": [
               "_matrix",
@@ -936,89 +1019,6 @@
             ]
           },
           "ResourceName": "event_id",
-          "ProducerParameterName": "id",
-          "IsNestedBodyResource": false,
-          "PrimitiveType": "String"
-        }
-      }
-    }
-  },
-  {
-    "consumer": {
-      "id": {
-        "RequestId": {
-          "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}",
-          "method": "Put"
-        },
-        "ResourceReference": {
-          "PathResource": {
-            "name": "room_id",
-            "pathToParameter": [
-              "_matrix",
-              "client",
-              "v3",
-              "rooms"
-            ],
-            "responsePath": {
-              "path": []
-            }
-          }
-        },
-        "ContainerName": "rooms",
-        "CandidateTypeNames": [
-          "room"
-        ],
-        "AccessPathParts": {
-          "path": []
-        },
-        "ResourceName": "room_id",
-        "ProducerParameterName": "id",
-        "IsNestedBodyResource": false,
-        "PrimitiveType": "String"
-      },
-      "parameterKind": "Path",
-      "annotation": {
-        "producerId": {
-          "endpoint": "/_matrix/client/v3/createRoom",
-          "method": "Post"
-        },
-        "producerParameter": {
-          "ResourceName": "room_id"
-        },
-        "consumerParameter": {
-          "ResourceName": "room_id"
-        }
-      }
-    },
-    "producer": {
-      "ResponseObject": {
-        "id": {
-          "RequestId": {
-            "endpoint": "/_matrix/client/v3/createRoom",
-            "method": "Post"
-          },
-          "ResourceReference": {
-            "BodyResource": {
-              "name": "room_id",
-              "fullPath": {
-                "path": [
-                  "room_id"
-                ]
-              }
-            }
-          },
-          "ContainerName": "createRoom",
-          "PathContainerName": "createRoom",
-          "CandidateTypeNames": [
-            "create__room"
-          ],
-          "AccessPath": "room_id",
-          "AccessPathParts": {
-            "path": [
-              "room_id"
-            ]
-          },
-          "ResourceName": "room_id",
           "ProducerParameterName": "id",
           "IsNestedBodyResource": false,
           "PrimitiveType": "String"

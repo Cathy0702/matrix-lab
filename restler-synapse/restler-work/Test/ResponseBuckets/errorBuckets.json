@@ -1,1 +1,139 @@
-{}
+{
+  "401": {
+    "d6b7420b-1dff-4497-8176-7fe0d228c08d": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/_matrix/client/v3/createRoom",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "Unauthorized",
+            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/_matrix/client/v3/createRoom",
+            "query": "",
+            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"trusted_private_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"private\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "Unauthorized",
+            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/_matrix/client/v3/createRoom",
+            "query": "",
+            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"trusted_private_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"public\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "Unauthorized",
+            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/_matrix/client/v3/createRoom",
+            "query": "",
+            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"public_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"private\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "Unauthorized",
+            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/_matrix/client/v3/createRoom",
+            "query": "",
+            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"public_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"public\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "Unauthorized",
+            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/_matrix/client/v3/createRoom",
+            "query": "",
+            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"private_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"private\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "Unauthorized",
+            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/_matrix/client/v3/createRoom",
+            "query": "",
+            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"private_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"public\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "Unauthorized",
+            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ]
+  }
+}

@@ -9,7 +9,23 @@ curl -s -X POST "http://localhost:8008/_matrix/client/v3/login" \
     "password": ""
   }'
 
+curl -X POST http://localhost:8008/_matrix/client/r0/register \
+  -H "Content-Type: application/json" \
+  -d '{
+    "auth": { "type": "m.login.dummy" },
+    "username": "cathyyyyliu",
+    "password": "Ly196388&"
+  }'
+
 curl -s -X POST "http://localhost:8008/_matrix/client/v3/createRoom" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "my secret room",
+    "visibility": "private" 
+  }'
+
+curl -s -X POST "http://0.0.0.0:6167/_matrix/client/v3/createRoom" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
@@ -27,8 +43,17 @@ curl -s -X POST 'http://localhost:8008/_matrix/client/v3/knock/!ldfBDKTmXuHCbpTr
     "reason": "my secret room"
   }'
 
-curl -s 'http://198.162.52.40:8008/_matrix/client/v3/events/$nePuf9zxgq0j4mLBsKS_XxysnkAFwnCSMqSBKDYXL2s' \
+curl -s -X POST "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/join" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "reason": "my secret room"
+  }'
+
+curl -s "http://localhost:8008/_matrix/client/v3/events/$EVENT_ID" \
   -H "Authorization: Bearer $TOKEN"
+
+curl -s "http://0.0.0.0:6167/_matrix/client/v3/rooms/$ROOM_ID/event/$EVENT_ID"   -H "Authorization: Bearer $TOKEN"
 
 curl -s 'http://localhost:8008/_matrix/client/v3/joined_rooms' \
   -H "Authorization: Bearer $TOKEN"
@@ -42,8 +67,19 @@ curl -X PUT \
   -H "Content-Type: application/json" \
   -d '{
     "msgtype": "m.text",
+    "body": "Hello from curl!!!!"
+  }'
+
+
+curl -X PUT \
+  "http://0.0.0.0:6167/_matrix/client/v3/rooms/$ROOM_ID/send/m.room.message/1234" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "msgtype": "m.text",
     "body": "Hello from curl!"
   }'
+
 
 curl -X PUT \
   "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/send/m.room.message/1234" \
@@ -67,8 +103,19 @@ curl -X POST \
     "filename": "README.md"
   }'
 
+curl -X POST \
+  'http://0.0.0.0:6167/_matrix/media/v3/upload' \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "filename": "conduit.toml"
+  }'
+
 curl -v -o out.png 'http://198.162.52.40:8008/_matrix/client/v1/media/download/matrix.chowchow/EpueGQLYXqxGfVnyHajdVWwo' \
   -H "Authorization: Bearer $TOKEN2"
+
+curl -v -o test.toml 'http://0.0.0.0:6167/_matrix/client/v1/media/download/matrix.chowchow/wDs2PzrGa7FaSiTLj7M8kmak2q43vcvC' \
+  -H "Authorization: Bearer $TOKEN"
 
 curl -X PUT \
 "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/send/m.reaction/txnid_react1aa" \
@@ -82,11 +129,26 @@ curl -X PUT \
     }
   }'
 
+curl -X PUT \
+"http://0.0.0.0:6167/_matrix/client/v3/rooms/$ROOM_ID/send/m.reaction/txnid_react1aa" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "m.relates_to": {
+      "rel_type": "m.annotation",
+      "event_id": "$lKrzIV0Pryj5nfmfvH_RJCs-SoULwG0ksjhOP_nZTDM",
+      "key": "aaaaa"
+    }
+  }'
+
 
 curl -s 'http://198.162.52.40:8008/_matrix/client/v3/sync' \
   -H "Authorization: Bearer $TOKEN"
 
 curl -s "http://198.162.52.40:8008/_matrix/client/v1/rooms/$ROOM_ID/relations/$EVENT_ID" \
+  -H "Authorization: Bearer $TOKEN"
+
+curl -s "http://0.0.0.0:6167/_matrix/client/v1/rooms/$ROOM_ID/relations/$EVENT_ID" \
   -H "Authorization: Bearer $TOKEN"
 
 curl -X PUT \
@@ -101,7 +163,23 @@ curl -X PUT \
   }'
 
 curl -X PUT \
-  "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/redact/$ngajhXbv7u-hPshkWGqbqpolUeF_OLe-8YY95cFM1Ng/txni_rddedact_img" \
+  "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/redact/$EVENT_ID/txni_rddedact_img" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "reason": "no reason"
+  }'
+
+curl -X PUT \
+  "http://0.0.0.0:6167/_matrix/client/v3/rooms/$ROOM_ID/redact/$EVENT_ID/txni_rddedact_img" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "reason": "no reason"
+  }'
+
+  curl -X PUT \
+  "http://0.0.0.0:6167/_matrix/client/v3/rooms/$ROOM_ID/redact/$EVENT_ID/txni_rddedact_img" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
@@ -109,7 +187,7 @@ curl -X PUT \
   }'
 
 curl -X POST \
-  'http://localhost:8008/_matrix/client/v3/rooms/!aimbxNpoYOGlQOoCpC:matrix.chowchow/leave' \
+  "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/leave" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{

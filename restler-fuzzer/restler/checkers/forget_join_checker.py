@@ -39,7 +39,7 @@ class ForgetJoinChecker(CheckerBase):
             endpoint = getattr(request, "endpoint", "") or ""
             if "/join" in endpoint:
                 self._checker_log.checker_print(
-                    f"  Prepare to send request: {endpoint}"
+                    f"  Prepare to send request {endpoint}"
                 )
                 return copy.copy(request)
         return None

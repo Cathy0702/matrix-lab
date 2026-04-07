@@ -26,6 +26,11 @@ class LeaveSendChecker(CheckerBase):
 
         if "leave" not in endpoint:
             return
+
+        self._checker_log.checker_print(
+            f"Detected leave endpoint in last request: {endpoint}"
+        )
+
         target = self._get_send_endpoint()
         if not target:
             return
@@ -36,6 +41,9 @@ class LeaveSendChecker(CheckerBase):
         for request in self._fuzzing_requests:
             endpoint = getattr(request, "endpoint", "") or ""
             if "send/m.room.message" in endpoint:
+                self._checker_log.checker_print(
+                    f"  Prepare to send request: {endpoint}"
+                )
                 return copy.copy(request)
         return None
     

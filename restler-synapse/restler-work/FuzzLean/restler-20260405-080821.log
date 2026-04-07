@@ -1,0 +1,36 @@
+Restler Information: 0 : Starting task FuzzLean...
+    DateTime=2026-04-05T08:08:21.6430224Z
+Restler Information: 0 : Launching 'python --version'
+    DateTime=2026-04-05T08:08:21.9326443Z
+Restler Information: 0 : Launching 'python3 --version'
+    DateTime=2026-04-05T08:08:21.9327977Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0142203 with exit code 0x0: 'python --version'
+    DateTime=2026-04-05T08:08:21.9521854Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0141161 with exit code 0x0: 'python3 --version'
+    DateTime=2026-04-05T08:08:21.9522265Z
+Restler Information: 0 : (21) python3 --version exited with code: 0
+    DateTime=2026-04-05T08:08:21.9569551Z
+Restler Information: 0 : (20) python --version exited with code: 0
+    DateTime=2026-04-05T08:08:21.9569909Z
+Restler Information: 0 : Launching 'python3 -B "/RESTler/restler/../engine/restler.py" --restler_grammar "/work/Compile/grammar.py" --custom_mutations "/work/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/work/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule    --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2026-04-05T08:08:21.9697394Z
+Restler Information: 0 : Process execution terminated in 00:01:32.5312949 with exit code 0x0: 'python3 -B "/RESTler/restler/../engine/restler.py" --restler_grammar "/work/Compile/grammar.py" --custom_mutations "/work/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/work/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule    --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2026-04-05T08:09:54.5012805Z
+Restler Information: 0 : (29) python3 -B "/RESTler/restler/../engine/restler.py" --restler_grammar "/work/Compile/grammar.py" --custom_mutations "/work/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/work/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule    --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test exited with code: 0
+    DateTime=2026-04-05T08:09:54.5014334Z
+Restler Information: 0 : Launching 'dotnet "/RESTler/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/work/FuzzLean" --output_dir "/work/FuzzLean/ResponseBuckets" --dictionary_file "/work/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2026-04-05T08:09:54.5288518Z
+Restler Information: 0 : Process execution terminated in 00:00:00.9504614 with exit code 0x0: 'dotnet "/RESTler/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/work/FuzzLean" --output_dir "/work/FuzzLean/ResponseBuckets" --dictionary_file "/work/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2026-04-05T08:09:55.4794384Z
+Restler Information: 0 : (40) dotnet "/RESTler/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/work/FuzzLean" --output_dir "/work/FuzzLean/ResponseBuckets" --dictionary_file "/work/Compile/dict.json" --max_instances_per_bucket 10 exited with code: 0
+    DateTime=2026-04-05T08:09:55.4795029Z
+Restler Information: 0 : Request coverage (successful / total): 11 / 11
+    DateTime=2026-04-05T08:09:55.5900989Z
+Restler Information: 0 : Attempted requests: 11 / 11
+    DateTime=2026-04-05T08:09:55.5901416Z
+Restler Information: 0 : No bugs were found.
+    DateTime=2026-04-05T08:09:55.5916394Z
+Restler Information: 0 : Task FuzzLean succeeded.
+    DateTime=2026-04-05T08:09:55.6020648Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2026-04-05T08:09:55.6953352Z

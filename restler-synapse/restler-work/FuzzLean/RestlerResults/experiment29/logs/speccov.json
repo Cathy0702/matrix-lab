@@ -15,7 +15,7 @@
         "request_order": 0,
         "sample_request": {
             "request_sent_timestamp": null,
-            "response_received_timestamp": "2026-03-11 21:40:16",
+            "response_received_timestamp": "2026-04-05 08:08:22",
             "request_verb": "POST",
             "request_uri": "/_matrix/client/v3/createRoom",
             "request_headers": [
@@ -28,8 +28,8 @@
             "response_status_code": "200",
             "response_status_text": "OK",
             "response_headers": [
-                "Server: Synapse/1.145.0",
-                "Date: Wed, 11 Mar 2026 21:40:13 GMT",
+                "Server: Synapse/1.148.0",
+                "Date: Sun, 05 Apr 2026 08:08:22 GMT",
                 "Content-Type: application/json",
                 "Cache-Control: no-cache, no-store, must-revalidate",
                 "Access-Control-Allow-Origin: *",
@@ -38,7 +38,7 @@
                 "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
                 "Transfer-Encoding: chunked"
             ],
-            "response_body": "31\r\n{\"room_id\":\"!VATtcRPnJziwxoxUlV:matrix.chowchow\"}\r\n0"
+            "response_body": "2f\r\n{\"room_id\":\"!QPTAbMRpcXRtXVgpkJ:matrix.leap04\"}\r\n0"
         },
         "tracked_parameters": {}
     },
@@ -63,9 +63,9 @@
         "request_order": 1,
         "sample_request": {
             "request_sent_timestamp": null,
-            "response_received_timestamp": "2026-03-11 21:45:47",
+            "response_received_timestamp": "2026-04-05 08:09:03",
             "request_verb": "PUT",
-            "request_uri": "/_matrix/client/v3/rooms/!zfPANOpnKqvppmPYTz:matrix.chowchow/send/m.room.message/txnIdb89acb7406",
+            "request_uri": "/_matrix/client/v3/rooms/!FGqEPATkoUsSurembM:matrix.leap04/send/m.room.message/txnIda5ac503463",
             "request_headers": [
                 "Accept: application/json",
                 "Host: localhost:8008",
@@ -76,8 +76,8 @@
             "response_status_code": "200",
             "response_status_text": "OK",
             "response_headers": [
-                "Server: Synapse/1.145.0",
-                "Date: Wed, 11 Mar 2026 21:45:47 GMT",
+                "Server: Synapse/1.148.0",
+                "Date: Sun, 05 Apr 2026 08:09:03 GMT",
                 "Content-Type: application/json",
                 "Cache-Control: no-cache, no-store, must-revalidate",
                 "Access-Control-Allow-Origin: *",
@@ -86,7 +86,7 @@
                 "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
                 "Transfer-Encoding: chunked"
             ],
-            "response_body": "3b\r\n{\"event_id\":\"$Pknm9lHP6LtkRdeOoaqhephw9XhIHepJFJGg1qkpFQQ\"}\r\n0"
+            "response_body": "3b\r\n{\"event_id\":\"$uJ3VETdS8PvFlpniVYf8XR9IWwFDu5WJGcKPjs77Hyo\"}\r\n0"
         },
         "tracked_parameters": {}
     },
@@ -111,9 +111,9 @@
         "request_order": 2,
         "sample_request": {
             "request_sent_timestamp": null,
-            "response_received_timestamp": "2026-03-11 21:46:44",
+            "response_received_timestamp": "2026-04-05 08:09:10",
             "request_verb": "POST",
-            "request_uri": "/_matrix/client/v3/rooms/!joxpUNdmNrPjPOCdXm:matrix.chowchow/leave",
+            "request_uri": "/_matrix/client/v3/rooms/!sbqoQYBSffhjfvgVnE:matrix.leap04/leave",
             "request_headers": [
                 "Accept: application/json",
                 "Host: localhost:8008",
@@ -124,8 +124,8 @@
             "response_status_code": "200",
             "response_status_text": "OK",
             "response_headers": [
-                "Server: Synapse/1.145.0",
-                "Date: Wed, 11 Mar 2026 21:46:43 GMT",
+                "Server: Synapse/1.148.0",
+                "Date: Sun, 05 Apr 2026 08:09:10 GMT",
                 "Content-Type: application/json",
                 "Cache-Control: no-cache, no-store, must-revalidate",
                 "Access-Control-Allow-Origin: *",
@@ -159,9 +159,9 @@
         "request_order": 3,
         "sample_request": {
             "request_sent_timestamp": null,
-            "response_received_timestamp": "2026-03-11 21:47:15",
+            "response_received_timestamp": "2026-04-05 08:09:13",
             "request_verb": "POST",
-            "request_uri": "/_matrix/client/v3/rooms/!CFwhvQXOIzgYPqteJT:matrix.chowchow/join",
+            "request_uri": "/_matrix/client/v3/rooms/!cShLzipoeEAkGicSjR:matrix.leap04/join",
             "request_headers": [
                 "Accept: application/json",
                 "Host: localhost:8008",
@@ -172,8 +172,8 @@
             "response_status_code": "200",
             "response_status_text": "OK",
             "response_headers": [
-                "Server: Synapse/1.145.0",
-                "Date: Wed, 11 Mar 2026 21:47:13 GMT",
+                "Server: Synapse/1.148.0",
+                "Date: Sun, 05 Apr 2026 08:09:13 GMT",
                 "Content-Type: application/json",
                 "Cache-Control: no-cache, no-store, must-revalidate",
                 "Access-Control-Allow-Origin: *",
@@ -182,14 +182,14 @@
                 "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
                 "Transfer-Encoding: chunked"
             ],
-            "response_body": "31\r\n{\"room_id\":\"!CFwhvQXOIzgYPqteJT:matrix.chowchow\"}\r\n0"
+            "response_body": "2f\r\n{\"room_id\":\"!cShLzipoeEAkGicSjR:matrix.leap04\"}\r\n0"
         },
         "tracked_parameters": {}
     },
-    "5d9f7790114833d44d157d3bb819e4634a3ff14f_1__1_1": {
+    "03bec3c1ada38fd6525a0c495a5612c2f31544d2_1__1_1": {
         "verb": "GET",
-        "endpoint": "/_matrix/client/v3/events/{event_id}",
-        "verb_endpoint": "GET /_matrix/client/v3/events/{event_id}",
+        "endpoint": "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}",
+        "verb_endpoint": "GET /_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}",
         "valid": 1,
         "matching_prefix": [
             {
@@ -211,9 +211,9 @@
         "request_order": 4,
         "sample_request": {
             "request_sent_timestamp": null,
-            "response_received_timestamp": "2026-03-11 21:50:02",
+            "response_received_timestamp": "2026-04-05 08:09:19",
             "request_verb": "GET",
-            "request_uri": "/_matrix/client/v3/events/$o1aKH4oavtYvvSAc_AdS0pdhRhmBar0U37_DVA6WeUQ",
+            "request_uri": "/_matrix/client/v1/rooms/!YgkUPHKSFIhHcPuazP:matrix.leap04/relations/$VtGvrll5UJMQcFChshs9CyWq7tihcJsHinABYlGo1nw",
             "request_headers": [
                 "Accept: application/json",
                 "Host: localhost:8008",
@@ -223,8 +223,8 @@
             "response_status_code": "200",
             "response_status_text": "OK",
             "response_headers": [
-                "Server: Synapse/1.145.0",
-                "Date: Wed, 11 Mar 2026 21:50:02 GMT",
+                "Server: Synapse/1.148.0",
+                "Date: Sun, 05 Apr 2026 08:09:19 GMT",
                 "Content-Type: application/json",
                 "Cache-Control: no-cache, no-store, must-revalidate",
                 "Access-Control-Allow-Origin: *",
@@ -233,14 +233,14 @@
                 "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
                 "Transfer-Encoding: chunked"
             ],
-            "response_body": "1a2\r\n{\"type\":\"m.room.message\",\"sender\":\"@restler_fuzzer1:matrix.chowchow\",\"content\":{\"body\":\"custom_body_fkqoifoqf0q39fj0qiefnlb;af\",\"msgtype\":\"m.text\"},\"room_id\":\"!jsQJqqxywfVRydNgtv:matrix.chowchow\",\"origin_server_ts\":1773265802106,\"unsigned\":{\"membership\":\"join\",\"age\":56,\"transaction_id\":\"txnId135f2df568\"},\"event_id\":\"$o1aKH4oavtYvvSAc_AdS0pdhRhmBar0U37_DVA6WeUQ\",\"user_id\":\"@restler_fuzzer1:matrix.chowchow\",\"age\":56}\r\n0"
+            "response_body": "c\r\n{\"chunk\":[]}\r\n0"
         },
         "tracked_parameters": {}
     },
-    "a7a1c46328f5d8e4a9ff59d4b315f0b920be1805_1__1_1": {
+    "bb964953ba3494bae05ae556d20c0c3d56cf7c5e_1__1_1": {
         "verb": "PUT",
-        "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}",
-        "verb_endpoint": "PUT /_matrix/client/v3/rooms/{room_id}/redact/{event_id}/{txnId}",
+        "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}",
+        "verb_endpoint": "PUT /_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}",
         "valid": 1,
         "matching_prefix": [
             {
@@ -262,9 +262,9 @@
         "request_order": 5,
         "sample_request": {
             "request_sent_timestamp": null,
-            "response_received_timestamp": "2026-03-11 21:50:10",
+            "response_received_timestamp": "2026-04-05 08:09:20",
             "request_verb": "PUT",
-            "request_uri": "/_matrix/client/v3/rooms/!JVSMSTqbGtPJHhvEcx:matrix.chowchow/redact/$HLk3PK-K3WZtIuHMEgL8udHleQIRsl52cwpOP_r92aM/txnId04591dcc15",
+            "request_uri": "/_matrix/client/v3/rooms/!KyZFlZLomQirlhsfcD:matrix.leap04/redact/$unUnBNWfPr7x77WETvkmw5hRJKA9sJlI9uGfpHpel_M/txnId6563e3f184",
             "request_headers": [
                 "Accept: application/json",
                 "Host: localhost:8008",
@@ -275,8 +275,8 @@
             "response_status_code": "200",
             "response_status_text": "OK",
             "response_headers": [
-                "Server: Synapse/1.145.0",
-                "Date: Wed, 11 Mar 2026 21:50:09 GMT",
+                "Server: Synapse/1.148.0",
+                "Date: Sun, 05 Apr 2026 08:09:20 GMT",
                 "Content-Type: application/json",
                 "Cache-Control: no-cache, no-store, must-revalidate",
                 "Access-Control-Allow-Origin: *",
@@ -285,7 +285,58 @@
                 "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
                 "Transfer-Encoding: chunked"
             ],
-            "response_body": "3b\r\n{\"event_id\":\"$zg9ttaKR0lOIZRsIW0tdrrsmw6_hKfShj4S1ZXuGnls\"}\r\n0"
+            "response_body": "3b\r\n{\"event_id\":\"$wAJ4eUJs3sKiHBtQkQBrshMSD8mkikFAeMIkTKCfvjY\"}\r\n0"
+        },
+        "tracked_parameters": {}
+    },
+    "cd183b03bd040622c1e85ea15ecb4b46927e683c_1__1_1": {
+        "verb": "GET",
+        "endpoint": "/_matrix/client/v3/events/{event_id_msg}",
+        "verb_endpoint": "GET /_matrix/client/v3/events/{event_id_msg}",
+        "valid": 1,
+        "matching_prefix": [
+            {
+                "id": "32274700258bf66a474ccb0afb9fa1b0d7a6e06d_1",
+                "valid": 1
+            },
+            {
+                "id": "21c8cab570ae9cd89c3239ed5d14cd58d940cf9d_1",
+                "valid": 1
+            }
+        ],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "OK",
+        "error_message": null,
+        "request_order": 6,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2026-04-05 08:09:26",
+            "request_verb": "GET",
+            "request_uri": "/_matrix/client/v3/events/$E5gFlE5ykBxjXHeJFGc8OKovqsBuCu681RU3pSsi5gI",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8008",
+                "AUTHORIZATION TOKEN"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "OK",
+            "response_headers": [
+                "Server: Synapse/1.148.0",
+                "Date: Sun, 05 Apr 2026 08:09:26 GMT",
+                "Content-Type: application/json",
+                "Cache-Control: no-cache, no-store, must-revalidate",
+                "Access-Control-Allow-Origin: *",
+                "Access-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS",
+                "Access-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date",
+                "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
+                "Transfer-Encoding: chunked"
+            ],
+            "response_body": "196\r\n{\"type\":\"m.room.message\",\"sender\":\"@restler-fuzz:matrix.leap04\",\"content\":{\"body\":\"custom_body_fkqoifoqf0q39fj0qiefnlb;af\",\"msgtype\":\"m.text\"},\"room_id\":\"!xfvaxgRjGlTyWpIZwh:matrix.leap04\",\"origin_server_ts\":1775376566479,\"unsigned\":{\"membership\":\"join\",\"age\":59,\"transaction_id\":\"txnId8f1e86adaa\"},\"event_id\":\"$E5gFlE5ykBxjXHeJFGc8OKovqsBuCu681RU3pSsi5gI\",\"user_id\":\"@restler-fuzz:matrix.leap04\",\"age\":59}\r\n0"
         },
         "tracked_parameters": {}
     },
@@ -311,12 +362,12 @@
         "status_code": "200",
         "status_text": "OK",
         "error_message": null,
-        "request_order": 6,
+        "request_order": 7,
         "sample_request": {
             "request_sent_timestamp": null,
-            "response_received_timestamp": "2026-03-11 21:50:48",
+            "response_received_timestamp": "2026-04-05 08:09:27",
             "request_verb": "POST",
-            "request_uri": "/_matrix/client/v3/rooms/!FxuEOWtqxXyODFRjIp:matrix.chowchow/forget",
+            "request_uri": "/_matrix/client/v3/rooms/!HmVnXgPdwXJRRclWSs:matrix.leap04/forget",
             "request_headers": [
                 "Accept: application/json",
                 "Host: localhost:8008",
@@ -326,8 +377,8 @@
             "response_status_code": "200",
             "response_status_text": "OK",
             "response_headers": [
-                "Server: Synapse/1.145.0",
-                "Date: Wed, 11 Mar 2026 21:50:48 GMT",
+                "Server: Synapse/1.148.0",
+                "Date: Sun, 05 Apr 2026 08:09:27 GMT",
                 "Content-Type: application/json",
                 "Cache-Control: no-cache, no-store, must-revalidate",
                 "Access-Control-Allow-Origin: *",
@@ -337,6 +388,169 @@
                 "Transfer-Encoding: chunked"
             ],
             "response_body": "2\r\n{}\r\n0"
+        },
+        "tracked_parameters": {}
+    },
+    "faed9ea648c0f7a83e59b90f6d40de7d326754ec_1__1_1": {
+        "verb": "PUT",
+        "endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}",
+        "verb_endpoint": "PUT /_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}",
+        "valid": 1,
+        "matching_prefix": [
+            {
+                "id": "32274700258bf66a474ccb0afb9fa1b0d7a6e06d_1",
+                "valid": 1
+            },
+            {
+                "id": "21c8cab570ae9cd89c3239ed5d14cd58d940cf9d_1",
+                "valid": 1
+            }
+        ],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "OK",
+        "error_message": null,
+        "request_order": 8,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2026-04-05 08:09:28",
+            "request_verb": "PUT",
+            "request_uri": "/_matrix/client/v3/rooms/!sNCmeKTDOGvoEcPOYO:matrix.leap04/send/m.reaction/txnId88db207daf",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8008",
+                "Content-Type: application/json",
+                "AUTHORIZATION TOKEN"
+            ],
+            "request_body": "{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$qy3TtO-FFhmfy2pWCj1h3ylZIXJscQoC2laSLFGS9Rs\",\n            \"key\":\"fuzzstring\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n",
+            "response_status_code": "200",
+            "response_status_text": "OK",
+            "response_headers": [
+                "Server: Synapse/1.148.0",
+                "Date: Sun, 05 Apr 2026 08:09:28 GMT",
+                "Content-Type: application/json",
+                "Cache-Control: no-cache, no-store, must-revalidate",
+                "Access-Control-Allow-Origin: *",
+                "Access-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS",
+                "Access-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date",
+                "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
+                "Transfer-Encoding: chunked"
+            ],
+            "response_body": "3b\r\n{\"event_id\":\"$8PJoqgShci6KbSQF1Wdc4Bl1tsBkO6aV_Nq-hUYjYCw\"}\r\n0"
+        },
+        "tracked_parameters": {}
+    },
+    "3666a82357c303dc5f4d8c9b3a0c2324c658e3a5_1__1_1_1": {
+        "verb": "PUT",
+        "endpoint": "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}",
+        "verb_endpoint": "PUT /_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}",
+        "valid": 1,
+        "matching_prefix": [
+            {
+                "id": "32274700258bf66a474ccb0afb9fa1b0d7a6e06d_1",
+                "valid": 1
+            },
+            {
+                "id": "21c8cab570ae9cd89c3239ed5d14cd58d940cf9d_1",
+                "valid": 1
+            },
+            {
+                "id": "faed9ea648c0f7a83e59b90f6d40de7d326754ec_1",
+                "valid": 1
+            }
+        ],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "OK",
+        "error_message": null,
+        "request_order": 9,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2026-04-05 08:09:47",
+            "request_verb": "PUT",
+            "request_uri": "/_matrix/client/v3/rooms/!QINHETqzwkKmmoYngJ:matrix.leap04/redact/$Sl-kFs778eSLCBKHhuChrOVBSTUkYdHnwfpLv5XNFUU/txnId737ed269dd",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8008",
+                "Content-Type: application/json",
+                "AUTHORIZATION TOKEN"
+            ],
+            "request_body": "{\n    \"reason\":\"custom_reason_sdfeewwwwwerfev3\"}\r\n",
+            "response_status_code": "200",
+            "response_status_text": "OK",
+            "response_headers": [
+                "Server: Synapse/1.148.0",
+                "Date: Sun, 05 Apr 2026 08:09:47 GMT",
+                "Content-Type: application/json",
+                "Cache-Control: no-cache, no-store, must-revalidate",
+                "Access-Control-Allow-Origin: *",
+                "Access-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS",
+                "Access-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date",
+                "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
+                "Transfer-Encoding: chunked"
+            ],
+            "response_body": "3b\r\n{\"event_id\":\"$Bexfz_cZiaYU7UCCF7GR9Zl_dMTBkDEhSYQ_VDGYnv8\"}\r\n0"
+        },
+        "tracked_parameters": {}
+    },
+    "b196a8109ad43e86a6f5550058227e08a68bbdc2_1__1_1_1": {
+        "verb": "GET",
+        "endpoint": "/_matrix/client/v3/events/{event_id_reaction}",
+        "verb_endpoint": "GET /_matrix/client/v3/events/{event_id_reaction}",
+        "valid": 1,
+        "matching_prefix": [
+            {
+                "id": "32274700258bf66a474ccb0afb9fa1b0d7a6e06d_1",
+                "valid": 1
+            },
+            {
+                "id": "21c8cab570ae9cd89c3239ed5d14cd58d940cf9d_1",
+                "valid": 1
+            },
+            {
+                "id": "faed9ea648c0f7a83e59b90f6d40de7d326754ec_1",
+                "valid": 1
+            }
+        ],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "OK",
+        "error_message": null,
+        "request_order": 10,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2026-04-05 08:09:54",
+            "request_verb": "GET",
+            "request_uri": "/_matrix/client/v3/events/$lH4mLGAG-gOc9ODvNfnzy2pKx2yklysc9WIoJp-xDw8",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8008",
+                "AUTHORIZATION TOKEN"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "OK",
+            "response_headers": [
+                "Server: Synapse/1.148.0",
+                "Date: Sun, 05 Apr 2026 08:09:54 GMT",
+                "Content-Type: application/json",
+                "Cache-Control: no-cache, no-store, must-revalidate",
+                "Access-Control-Allow-Origin: *",
+                "Access-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS",
+                "Access-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization, Date",
+                "Access-Control-Expose-Headers: Synapse-Trace-Id, Server",
+                "Transfer-Encoding: chunked"
+            ],
+            "response_body": "1c7\r\n{\"type\":\"m.reaction\",\"sender\":\"@restler-fuzz:matrix.leap04\",\"content\":{\"m.relates_to\":{\"event_id\":\"$fgZFJaNuuLWHEIg7e5ee0ZAh_jDVaV1Mwx0TZ6yJw9E\",\"key\":\"fuzzstring\",\"rel_type\":\"m.annotation\"}},\"room_id\":\"!rCQSWMZfKtffIVuLbb:matrix.leap04\",\"origin_server_ts\":1775376593976,\"unsigned\":{\"membership\":\"join\",\"age\":45,\"transaction_id\":\"txnIdeafc37bf5a\"},\"event_id\":\"$lH4mLGAG-gOc9ODvNfnzy2pKx2yklysc9WIoJp-xDw8\",\"user_id\":\"@restler-fuzz:matrix.leap04\",\"age\":45}\r\n0"
         },
         "tracked_parameters": {}
     }

@@ -24,6 +24,11 @@ class ForgetJoinChecker(CheckerBase):
         endpoint = getattr(last_req, "endpoint", "") or ""
         if "forget" not in endpoint:
             return
+
+        self._checker_log.checker_print(
+            f"Detected forget endpoint in last request: {endpoint}"
+        )
+
         target = self._get_join_endpoint()
         if not target:
             return
@@ -33,6 +38,9 @@ class ForgetJoinChecker(CheckerBase):
         for request in self._fuzzing_requests:
             endpoint = getattr(request, "endpoint", "") or ""
             if "/join" in endpoint:
+                self._checker_log.checker_print(
+                    f"  Prepare to send request {endpoint}"
+                )
                 return copy.copy(request)
         return None
 

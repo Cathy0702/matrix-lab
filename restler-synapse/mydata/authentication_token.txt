@@ -1,2 +1,2 @@
 {"id":{}}
-Authorization: Bearer syt_cmVzdGxlcl9mdXp6ZXIx_FnHCyiAeGLSRCqkislcT_1zspVe
+Authorization: Bearer syt_cmVzdGxlci1mdXp6_JDRxxPCuTpKAvwTGbyjL_37XPSB

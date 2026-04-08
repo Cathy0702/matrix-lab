@@ -1,6 +1,6 @@
 {
   "SwaggerSpecFilePath": [
-    "/data/api.min.json"
+    "/data/api.full.json"
   ],
   "GrammarOutputDirectoryPath": "/work/Compile",
   "CustomDictionaryFilePath": "/work/dict.json",

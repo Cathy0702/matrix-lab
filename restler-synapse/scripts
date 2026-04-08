@@ -25,6 +25,15 @@ curl -s -X POST "http://localhost:8008/_matrix/client/v3/createRoom" \
     "visibility": "private" 
   }'
 
+curl -s -X POST "http://localhost:8008/_matrix/client/v3/keys/query" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "device_keys": {
+      "@sliu0702:matrix.leap04": []
+    }
+  }'
+
 curl -s -X POST "http://0.0.0.0:6167/_matrix/client/v3/createRoom" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \

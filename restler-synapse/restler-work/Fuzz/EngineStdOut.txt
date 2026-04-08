@@ -1,0 +1,57 @@
+2026-04-08 06:39:00.067: Initializing: Garbage collection every 30 seconds.
+2026-04-08 06:39:00.260: Generation: 1 
+Invalid value generator random seed: 1775630340.284572
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775630340.6311898
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775630343.398356
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775630343.4910321
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775630348.6666865
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775630348.8985927
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775630349.1058636
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775630349.3133435
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775630349.5914888
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775630349.8864162
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775631066.2228336
+Setting invalid value generator random seed: 12345
+2026-04-08 07:25:14.373: Terminating garbage collection. Waiting for max 300 seconds. 
+2026-04-08 07:25:14.376: Exception during garbage collection: [Errno 2] No such file or directory: '/work/Fuzz/RestlerResults/experiment30/logs/network.gc.133272257076024.1.txt'
+Traceback (most recent call last):
+  File "/RESTler/engine/engine/core/fuzzer.py", line 43, in run
+    self._num_total_sequences = driver.generate_sequences(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/RESTler/engine/engine/core/driver.py", line 836, in generate_sequences
+    seq_collection = render(seq_collection, fuzzing_pool, checkers, generation, global_lock,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/RESTler/engine/engine/core/driver.py", line 332, in render_sequential
+    valid_renderings = render_one(seq_collection[ith], ith, checkers, generation, global_lock, garbage_collector)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/RESTler/engine/engine/core/driver.py", line 219, in render_one
+    renderings = current_seq.render(candidate_values_pool, global_lock)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/RESTler/engine/engine/core/sequences.py", line 637, in render
+    self.send_rendered_request(request, rendered_data, parser, tracked_parameters,
+  File "/RESTler/engine/engine/core/sequences.py", line 384, in send_rendered_request
+    response = request_utilities.send_request_data(rendered_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/RESTler/engine/engine/core/request_utilities.py", line 453, in send_request_data
+    success, response = main_sock.sendRecv(rendered_data,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/RESTler/engine/engine/transport_layer/messaging.py", line 125, in sendRecv
+    RAW_LOGGING(f'Received: {response.to_str!r}\n')
+  File "/RESTler/engine/utils/logger.py", line 567, in raw_network_logging
+    network_log.write(f"{formatting.timestamp()}: {data}")
+  File "/RESTler/engine/utils/logger.py", line 140, in write
+    if os.path.getsize(self._current_log_path) > NetworkLog._MaxLogSize:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 62, in getsize
+FileNotFoundError: [Errno 2] No such file or directory: '/work/Fuzz/RestlerResults/experiment30/logs/network.testing.133272250288952.1.txt'
+

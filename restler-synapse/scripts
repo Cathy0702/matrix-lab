@@ -17,12 +17,31 @@ curl -X POST http://localhost:8008/_matrix/client/r0/register \
     "password": "Ly196388&"
   }'
 
+
 curl -s -X POST "http://localhost:8008/_matrix/client/v3/createRoom" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "my secret room",
     "visibility": "private" 
+  }'
+
+curl -s -X POST "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/ban" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "reason": "my secret room",
+    "user_id": "@sliu0702:matrix.leap04" 
+  }'
+
+
+curl -s -X POST "http://localhost:8008/_matrix/client/v3/keys/query" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "device_keys": {
+      "@sliu0702:matrix.leap04": []
+    }
   }'
 
 curl -s -X POST "http://0.0.0.0:6167/_matrix/client/v3/createRoom" \
@@ -53,9 +72,15 @@ curl -s -X POST "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/join" \
 curl -s "http://localhost:8008/_matrix/client/v3/events/$EVENT_ID" \
   -H "Authorization: Bearer $TOKEN"
 
+curl -s "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/messages" \
+  -H "Authorization: Bearer $TOKEN"
+
 curl -s "http://0.0.0.0:6167/_matrix/client/v3/rooms/$ROOM_ID/event/$EVENT_ID"   -H "Authorization: Bearer $TOKEN"
 
 curl -s 'http://localhost:8008/_matrix/client/v3/joined_rooms' \
+  -H "Authorization: Bearer $TOKEN"
+
+curl -s "http://localhost:8008/_matrix/client/v3/rooms/$ROOM_ID/context/$EVENT_ID" \
   -H "Authorization: Bearer $TOKEN"
 
 curl -s 'http://198.162.52.40:8008/_matrix/client/v3/admin/whois/@cathyyyyliu:matrix.chowchow' \
@@ -145,7 +170,7 @@ curl -X PUT \
 curl -s 'http://198.162.52.40:8008/_matrix/client/v3/sync' \
   -H "Authorization: Bearer $TOKEN"
 
-curl -s "http://198.162.52.40:8008/_matrix/client/v1/rooms/$ROOM_ID/relations/$EVENT_ID" \
+curl -s "http://localhost:8008/_matrix/client/v1/rooms/$ROOM_ID/relations/$EVENT_ID" \
   -H "Authorization: Bearer $TOKEN"
 
 curl -s "http://0.0.0.0:6167/_matrix/client/v1/rooms/$ROOM_ID/relations/$EVENT_ID" \

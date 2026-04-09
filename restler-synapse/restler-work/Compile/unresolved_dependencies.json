@@ -1,22 +1,4 @@
 {
-  "/_matrix/client/v3/createRoom": {
-    "POST": {
-      "Body": [
-        {
-          "producer_endpoint": "",
-          "producer_method": "",
-          "producer_resource_name": "",
-          "consumer_param": "preset"
-        },
-        {
-          "producer_endpoint": "",
-          "producer_method": "",
-          "producer_resource_name": "",
-          "consumer_param": "visibility"
-        }
-      ]
-    }
-  },
   "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}": {
     "PUT": {
       "Body": [

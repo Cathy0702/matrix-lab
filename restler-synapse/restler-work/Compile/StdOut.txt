@@ -1,292 +1,557 @@
-[04/05/2026 19:23:15] Generating grammar...
-[04/05/2026 19:23:15] Getting requests...
-[04/05/2026 19:23:15] Getting dependencies...
-[04/05/2026 19:23:15] Getting path consumers...
-[04/05/2026 19:23:15] Getting query consumers...
-[04/05/2026 19:23:15] Getting header consumers...
-[04/05/2026 19:23:15] Getting body consumers...
-[04/05/2026 19:23:15] Getting producers...
-[04/05/2026 19:23:15] Done processing producers
-[04/05/2026 19:23:15] Compute dependencies
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
-  xMsPath = None
-  method = Get }[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
+[04/08/2026 20:24:26] Generating grammar...
+[04/08/2026 20:24:26] Getting requests...
+found unsupported format: mx-user-id
+[04/08/2026 20:24:27] Getting dependencies...
+[04/08/2026 20:24:27] Getting path consumers...
+[04/08/2026 20:24:27] Getting query consumers...
+[04/08/2026 20:24:27] Getting header consumers...
+[04/08/2026 20:24:27] Getting body consumers...
+[04/08/2026 20:24:27] Getting producers...
+[04/08/2026 20:24:27] Done processing producers
+[04/08/2026 20:24:27] Compute dependencies
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/account/whoami"
   xMsPath = None
   method = Get }
-[[[04/05/2026 19:23:15] 
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint =
+            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] [[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27[04/08/2026 20:24:27[04/08/2026 20:24:27[04/08/2026 20:24:27] ] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_msg}"
+  xMsPath = None
+  method = Get }Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
+  xMsPath = None
+  method = Get }[04/08/2026 20:24:27[[[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
+  xMsPath = None
+  method = Post }04/08/2026 20:24:27
+] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
+  xMsPath = None
+  method = Put }04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
+  xMsPath = None
+  method = Post }
+
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/account/whoami"
+  xMsPath = None
+  method = Get }
+] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+] Second pass dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Put }
+Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
+  xMsPath = None
+  method = Post }
+
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/account/whoami"
+  xMsPath = None
+  method = Get }
+
+] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/join/{roomId}"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint =
+            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
+  xMsPath = None
+  method = Put }
+[[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Put }
+04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/messages"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/account/whoami"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27[] Done dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
+  xMsPath = None
+  method = Post }
+04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_msg}"
+  xMsPath = None
+  method = Get }[[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/messages"
+  xMsPath = None
+  method = Get }[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
+  xMsPath = None
+  method = Get }[[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+
+
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/join/{roomId}"
+  xMsPath = None
+  method = Post }
+04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_reaction}"
+  xMsPath = None
+  method = Get }[
+04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:2704/08/2026 20:24:27] [04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Get }Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/members"
+  xMsPath = None
+  method = Get }
+] Done dependencies for request { endpoint = "/_matrix/client/v3/account/whoami"
+  xMsPath = None
+  method = Get }
+
+[
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
+  xMsPath = None
+  method = Put }04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
+  xMsPath = None
+  method = Post }
+
+[[04/08/2026 20:24:27[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_reaction}"
+  xMsPath = None
+  method = Get }] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
+  xMsPath = None
+  method = Put }
+
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
+  xMsPath = None
+  method = Post }
+04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/account/whoami"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/members"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
+  xMsPath = None
+  method = Post }[04/08/2026 20:24:27
+[04/08/2026 20:24:27[04/08/2026 20:24:27[] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/kick"
+  xMsPath = None
+  method = Post }
+] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Get }04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/messages"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/members"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/kick"
+  xMsPath = None
+  method = Post }[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/messages"
+  xMsPath = None
+  method = Get }
+
+[04/08/2026 20:24:27] [Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/members"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/account/whoami"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
+  xMsPath = None
+  method = Post }[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Put }
+
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
+  xMsPath = None
+  method = Put }] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
+  xMsPath = None
+  method = Put }
+
+[04/08/2026 20:24:27[] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
+  xMsPath = None
+  method = Get }[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/account/whoami"
+  xMsPath = None
+  method = Get }
+04/08/2026 20:24:27] 
 Second pass dependencies for request { endpoint =
             "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
   xMsPath = None
   method = Put }
-04/05/2026 19:23:15[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/members"
   xMsPath = None
   method = Get }
-] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
-  xMsPath = None
-  method = Put }
-[[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_msg}"
   xMsPath = None
   method = Get }
-] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
   xMsPath = None
-  method = Post }[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/members"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] [04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
+  xMsPath = None
+  method = Post }
+Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/join/{roomId}"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_msg}"
+  xMsPath = None
+  method = Get }[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
+  xMsPath = None
+  method = Put }
+[
+04/08/2026 20:24:27] Done dependencies for request { endpoint =
+            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
+  xMsPath = None
+  method = Get }[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_reaction}"
+  xMsPath = None
+  method = Get }[
+04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] [04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/messages"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/join/{roomId}"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/kick"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/messages"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/kick"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint =
+            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
+  xMsPath = None
+  method = Post }
+[[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
+  xMsPath = None
+  method = Post }
+04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/members"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/join/{roomId}"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/messages"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/join/{roomId}"
+  xMsPath = None
+  method = Post }
+[[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Put }
+04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_reaction}"
+  xMsPath = None
+  method = Get }[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/kick"
   xMsPath = None
   method = Post }
 
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
-  xMsPath = None
-  method = Get }
-04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
-  xMsPath = None
-  method = Get }
-04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
   xMsPath = None
   method = Post }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
   xMsPath = None
-  method = Put }[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
-  xMsPath = None
-  method = Post }
-
-[04/05/2026 19:23:15] Done dependencies for request { endpoint =
+  method = Put }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint =
             "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
   xMsPath = None
   method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
   xMsPath = None
-  method = Post }[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
+  method = Put }[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
   xMsPath = None
   method = Get }
 
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
+[[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
   xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
+  method = Post }04/08/2026 20:24:27
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
   xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
-  xMsPath = None
-  method = Put }[
-04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
-  xMsPath = None
-  method = Get }
-] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint =
-            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint =
-            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
-  xMsPath = None
-  method = Get }
-[[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
-  xMsPath = None
-  method = Put }
-04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15[04/05/2026 19:23:15] ] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
-  xMsPath = None
-  method = Post }
-Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint =
-            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] [04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
-  xMsPath = None
-  method = Post }
-Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint =
-            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint =
-            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
-  xMsPath = None
-  method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint =
-            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
-  xMsPath = None
-  method = Get }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
-  xMsPath = None
-  method = Get }[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
+  method = Put }] Done dependencies for request { endpoint = "/_matrix/client/v3/join/{roomId}"
   xMsPath = None
   method = Post }
 
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
-  xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Second pass dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
+[04/08/2026 20:24:27[] 04/08/2026 20:24:27Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
   xMsPath = None
   method = Post }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
+] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint =
+            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
   xMsPath = None
   method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
+[[04/08/2026 20:24:27] 04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/events/{event_id_msg}"
   xMsPath = None
-  method = Put }
-[04/05/2026 19:23:15] Done dependencies for request { endpoint = "/_matrix/client/v3/createRoom"
+  method = Get }
+Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/leave"
   xMsPath = None
   method = Post }
-[04/05/2026 19:23:15] Assigning equality constraints...
-[04/05/2026 19:23:15] Getting ordering constraints...
-[04/05/2026 19:23:15] Dependency analysis completed.
-[04/05/2026 19:23:15] Generating request primitives...
+[04/08/2026 20:24:27] [04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/kick"
+  xMsPath = None
+  method = Post }[04/08/2026 20:24:27] 
+Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_reaction}"
+  xMsPath = None
+  method = Get }[04/08/2026 20:24:27
+[04/08/2026 20:24:27] ] Done dependencies for request { endpoint = "/_matrix/client/v3/join/{roomId}"
+  xMsPath = None
+  method = Post }
+Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
+  xMsPath = None
+  method = Post }
+] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_msg}/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/messages"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/members"
+  xMsPath = None
+  method = Get }[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
+  xMsPath = None
+  method = Put }
+
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint =
+            "/_matrix/client/v3/rooms/{room_id}/redact/{event_id_reaction}/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v1/rooms/{room_id}/relations/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/event/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/forget"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/directory/list/room/{roomId}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/kick"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/kick"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_msg}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/join"
+  xMsPath = None
+  method = Post }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
+  xMsPath = None
+  method = Put }
+[04/08/2026 20:24:27] Second pass dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}"
+  xMsPath = None
+  method = Put }[04/08/2026 20:24:27] Done dependencies for request { endpoint = "/_matrix/client/v3/rooms/{roomId}/context/{event_id_reaction}"
+  xMsPath = None
+  method = Get }
+
+[04/08/2026 20:24:27] Assigning equality constraints...
+[04/08/2026 20:24:27] Getting ordering constraints...
+[04/08/2026 20:24:27] Dependency analysis completed.
+[04/08/2026 20:24:27] Generating request primitives...
 Writing new dictionary to /work/Compile/dict.json
-[04/05/2026 19:23:15] Generating python grammar...
-[04/05/2026 19:23:15] Get requests
-[04/05/2026 19:23:16] Done get requests
-[04/05/2026 19:23:16] Done generating python grammar.
+[04/08/2026 20:24:27] Generating python grammar...
+[04/08/2026 20:24:27] Get requests
+[04/08/2026 20:24:27] Done get requests
+[04/08/2026 20:24:27] Done generating python grammar.
 Workflow completed.  See /work/Compile for REST-ler grammar.

@@ -29,7 +29,7 @@
         {
           "producer_endpoint": "",
           "producer_method": "",
-          "producer_resource_name": "",
+          "producer_resource_name": "restler_custom_payload__preset",
           "consumer_param": "preset"
         },
         {
@@ -41,7 +41,37 @@
         {
           "producer_endpoint": "",
           "producer_method": "",
-          "producer_resource_name": "",
+          "producer_resource_name": "restler_custom_payload__visibility",
+          "consumer_param": "visibility"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/directory/list/room/{roomId}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/createRoom",
+          "producer_method": "POST",
+          "producer_resource_name": "room_id",
+          "consumer_param": "roomId"
+        }
+      ]
+    },
+    "PUT": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/createRoom",
+          "producer_method": "POST",
+          "producer_resource_name": "room_id",
+          "consumer_param": "roomId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "restler_custom_payload__visibility",
           "consumer_param": "visibility"
         }
       ]
@@ -67,6 +97,148 @@
           "producer_method": "PUT",
           "producer_resource_name": "event_id",
           "consumer_param": "event_id_reaction"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/join/{roomId}": {
+    "POST": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/createRoom",
+          "producer_method": "POST",
+          "producer_resource_name": "room_id",
+          "consumer_param": "roomId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "restler_custom_payload__reason",
+          "consumer_param": "reason"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/rooms/{roomId}/context/{event_id_msg}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "event_id",
+          "consumer_param": "event_id_msg"
+        },
+        {
+          "producer_endpoint": "/_matrix/client/v3/createRoom",
+          "producer_method": "POST",
+          "producer_resource_name": "room_id",
+          "consumer_param": "roomId"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/rooms/{roomId}/context/{event_id_reaction}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "event_id",
+          "consumer_param": "event_id_reaction"
+        },
+        {
+          "producer_endpoint": "/_matrix/client/v3/createRoom",
+          "producer_method": "POST",
+          "producer_resource_name": "room_id",
+          "consumer_param": "roomId"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/rooms/{roomId}/event/{event_id_msg}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.room.message/{txnId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "event_id",
+          "consumer_param": "event_id_msg"
+        },
+        {
+          "producer_endpoint": "/_matrix/client/v3/createRoom",
+          "producer_method": "POST",
+          "producer_resource_name": "room_id",
+          "consumer_param": "roomId"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/rooms/{roomId}/event/{event_id_reaction}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/rooms/{room_id}/send/m.reaction/{txnId}",
+          "producer_method": "PUT",
+          "producer_resource_name": "event_id",
+          "consumer_param": "event_id_reaction"
+        },
+        {
+          "producer_endpoint": "/_matrix/client/v3/createRoom",
+          "producer_method": "POST",
+          "producer_resource_name": "room_id",
+          "consumer_param": "roomId"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/rooms/{roomId}/kick": {
+    "POST": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/createRoom",
+          "producer_method": "POST",
+          "producer_resource_name": "room_id",
+          "consumer_param": "roomId"
+        }
+      ],
+      "Body": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "restler_custom_payload__reason",
+          "consumer_param": "reason"
+        },
+        {
+          "producer_endpoint": "/_matrix/client/v3/account/whoami",
+          "producer_method": "GET",
+          "producer_resource_name": "user_id",
+          "consumer_param": "user_id"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/rooms/{roomId}/members": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/createRoom",
+          "producer_method": "POST",
+          "producer_resource_name": "room_id",
+          "consumer_param": "roomId"
+        }
+      ]
+    }
+  },
+  "/_matrix/client/v3/rooms/{roomId}/messages": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "/_matrix/client/v3/createRoom",
+          "producer_method": "POST",
+          "producer_resource_name": "room_id",
+          "consumer_param": "roomId"
         }
       ]
     }

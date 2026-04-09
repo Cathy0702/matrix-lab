@@ -1,20 +1,20 @@
 {
-  "401": {
-    "d6b7420b-1dff-4497-8176-7fe0d228c08d": [
+  "400": {
+    "052bff29-8278-4f8f-8516-1dbf59b5a27e": [
       {
         "request": {
           "RequestData": {
-            "method": "POST",
-            "path": "/_matrix/client/v3/createRoom",
+            "method": "PUT",
+            "path": "/_matrix/client/v3/rooms/!kRVeWzHGKTFtlWzziz:matrix.leap04/send/m.reaction/txnId_RANDOM_SUFFIX_ABSTRACTED_",
             "query": "",
-            "body": "{}"
+            "body": "{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$9hqNVyf1PfRqjCEPbdxJ9TL0MQzYdrP3fnsfJ_1XGpY\",\n            \"key\":\"../../../../../../../../../../../../../../../boot.ini%00\n\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n"
           }
         },
         "response": {
           "ResponseData": {
-            "code": 401,
-            "codeDescription": "Unauthorized",
-            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "34\r\n{\"errcode\":\"M_NOT_JSON\",\"error\":\"Content not JSON.\"}\r\n0\r\n\r\n",
             "isFailure": true,
             "isBug": false
           }
@@ -23,17 +23,17 @@
       {
         "request": {
           "RequestData": {
-            "method": "POST",
-            "path": "/_matrix/client/v3/createRoom",
+            "method": "PUT",
+            "path": "/_matrix/client/v3/rooms/!cgokPbnDQoWHPImVmh:matrix.leap04/send/m.reaction/txnId_RANDOM_SUFFIX_ABSTRACTED_",
             "query": "",
-            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"trusted_private_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"private\"}\r\n"
+            "body": "{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$-FmElQQ06Nbix1DjwK1j1HHYL3-EHP7ejunVYgKErfk\",\n            \"key\":\"1) or pg_sleep(10)--\n\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n"
           }
         },
         "response": {
           "ResponseData": {
-            "code": 401,
-            "codeDescription": "Unauthorized",
-            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "34\r\n{\"errcode\":\"M_NOT_JSON\",\"error\":\"Content not JSON.\"}\r\n0\r\n\r\n",
             "isFailure": true,
             "isBug": false
           }
@@ -42,17 +42,17 @@
       {
         "request": {
           "RequestData": {
-            "method": "POST",
-            "path": "/_matrix/client/v3/createRoom",
+            "method": "PUT",
+            "path": "/_matrix/client/v3/rooms/!JejiZumQPiveODDjPv:matrix.leap04/send/m.reaction/txnId_RANDOM_SUFFIX_ABSTRACTED_",
             "query": "",
-            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"trusted_private_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"public\"}\r\n"
+            "body": "{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$kE2nEwQhCKakeQ_nWfJ0vbq_C5qPoQO_TR-Yp40GOjI\",\n            \"key\":\"https://eff.org\n\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n"
           }
         },
         "response": {
           "ResponseData": {
-            "code": 401,
-            "codeDescription": "Unauthorized",
-            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "34\r\n{\"errcode\":\"M_NOT_JSON\",\"error\":\"Content not JSON.\"}\r\n0\r\n\r\n",
             "isFailure": true,
             "isBug": false
           }
@@ -61,17 +61,17 @@
       {
         "request": {
           "RequestData": {
-            "method": "POST",
-            "path": "/_matrix/client/v3/createRoom",
+            "method": "PUT",
+            "path": "/_matrix/client/v3/rooms/!SlHgjQAYskuvQPGZrU:matrix.leap04/send/m.reaction/txnId_RANDOM_SUFFIX_ABSTRACTED_",
             "query": "",
-            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"public_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"private\"}\r\n"
+            "body": "{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$QLXbYVe0QNjEAg4VVufZNWdvMHTV_3Csm0SAdaFhZl0\",\n            \"key\":\"test\\u202a\n\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n"
           }
         },
         "response": {
           "ResponseData": {
-            "code": 401,
-            "codeDescription": "Unauthorized",
-            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "34\r\n{\"errcode\":\"M_NOT_JSON\",\"error\":\"Content not JSON.\"}\r\n0\r\n\r\n",
             "isFailure": true,
             "isBug": false
           }
@@ -80,17 +80,17 @@
       {
         "request": {
           "RequestData": {
-            "method": "POST",
-            "path": "/_matrix/client/v3/createRoom",
+            "method": "PUT",
+            "path": "/_matrix/client/v3/rooms/!jQrNBYdGPIRxkFBDbO:matrix.leap04/send/m.reaction/txnId_RANDOM_SUFFIX_ABSTRACTED_",
             "query": "",
-            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"public_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"public\"}\r\n"
+            "body": "{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$U8Y3_x3LOWFizjx9Vg-yroAMgMZ4zxJwlRcHgmk0bN4\",\n            \"key\":\"ЁЂЃЄЅІЇЈ\n\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n"
           }
         },
         "response": {
           "ResponseData": {
-            "code": 401,
-            "codeDescription": "Unauthorized",
-            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "34\r\n{\"errcode\":\"M_NOT_JSON\",\"error\":\"Content not JSON.\"}\r\n0\r\n\r\n",
             "isFailure": true,
             "isBug": false
           }
@@ -99,17 +99,17 @@
       {
         "request": {
           "RequestData": {
-            "method": "POST",
-            "path": "/_matrix/client/v3/createRoom",
+            "method": "PUT",
+            "path": "/_matrix/client/v3/rooms/!dRgpOsJgTZOvebJxlM:matrix.leap04/send/m.reaction/txnId_RANDOM_SUFFIX_ABSTRACTED_",
             "query": "",
-            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"private_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"private\"}\r\n"
+            "body": "{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$2I1zAogZ4XCMFiQqOt07fxVuN4i0hRsxhnN5ZxLoC5Q\",\n            \"key\":\"#SQLi\n\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n"
           }
         },
         "response": {
           "ResponseData": {
-            "code": 401,
-            "codeDescription": "Unauthorized",
-            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "34\r\n{\"errcode\":\"M_NOT_JSON\",\"error\":\"Content not JSON.\"}\r\n0\r\n\r\n",
             "isFailure": true,
             "isBug": false
           }
@@ -118,17 +118,74 @@
       {
         "request": {
           "RequestData": {
-            "method": "POST",
-            "path": "/_matrix/client/v3/createRoom",
+            "method": "PUT",
+            "path": "/_matrix/client/v3/rooms/!EHQwQddENnaIUqnRCP:matrix.leap04/send/m.reaction/txnId_RANDOM_SUFFIX_ABSTRACTED_",
             "query": "",
-            "body": "{\n    \"name\":\"custom_name_123r3fskmqoiwmfqi423orjso\",\n    \"preset\":\"private_chat\",\n    \"topic\":\"custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee\",\n    \"visibility\":\"public\"}\r\n"
+            "body": "{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$EF6Qgcr3ohB0HXVok6bRJyIdF5iMrhFwj00NHVhaAmk\",\n            \"key\":\"⅛⅜⅝⅞\n\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n"
           }
         },
         "response": {
           "ResponseData": {
-            "code": 401,
-            "codeDescription": "Unauthorized",
-            "content": "58\r\n{\"errcode\":\"M_UNKNOWN_TOKEN\",\"error\":\"Invalid access token passed.\",\"soft_logout\":false}\r\n0\r\n\r\n",
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "34\r\n{\"errcode\":\"M_NOT_JSON\",\"error\":\"Content not JSON.\"}\r\n0\r\n\r\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "PUT",
+            "path": "/_matrix/client/v3/rooms/!ZDSwuKfcxEkArkIjVj:matrix.leap04/send/m.reaction/txnId_RANDOM_SUFFIX_ABSTRACTED_",
+            "query": "",
+            "body": "{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$jnQBAzP59KtMUGS27ZyAb-Agi_mp7e_Zx6AGSQUyocg\",\n            \"key\":\"%foo;\n\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "34\r\n{\"errcode\":\"M_NOT_JSON\",\"error\":\"Content not JSON.\"}\r\n0\r\n\r\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "PUT",
+            "path": "/_matrix/client/v3/rooms/!YtyHrKQInbNDbGDakg:matrix.leap04/send/m.reaction/txnId_RANDOM_SUFFIX_ABSTRACTED_",
+            "query": "",
+            "body": "{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$PCCRSLMW1lRrmLHyKTVfPP9RweO4kjgNE6_Ypx-Yy_4\",\n            \"key\":\"*\n\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "34\r\n{\"errcode\":\"M_NOT_JSON\",\"error\":\"Content not JSON.\"}\r\n0\r\n\r\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "PUT",
+            "path": "/_matrix/client/v3/rooms/!ezepKBCaQjKBmireJm:matrix.leap04/send/m.reaction/txnId_RANDOM_SUFFIX_ABSTRACTED_",
+            "query": "",
+            "body": "{\n    \"m.relates_to\":\n        {\n            \"event_id\":\"$LXPDcdLf957EIGeLrIMB_4dZq2XrS5atxGgeIROaI-U\",\n            \"key\":\"\")) or sleep(10)=\"\n\",\n            \"rel_type\":\"m.annotation\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "34\r\n{\"errcode\":\"M_NOT_JSON\",\"error\":\"Content not JSON.\"}\r\n0\r\n\r\n",
             "isFailure": true,
             "isBug": false
           }

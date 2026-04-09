@@ -235,18 +235,13 @@
     "body": [
       "custom_body_fkqoifoqf0q39fj0qiefnlb;af"
     ],
-    "keyName": [
-      "avatar_url",
-      "displayname",
-      "m.tz",
-      "m.example_field"
-    ],
-    "method": [
-      "crop",
-      "scale"
-    ],
     "name": [
       "custom_name_123r3fskmqoiwmfqi423orjso"
+    ],
+    "preset": [
+      "private_chat",
+      "public_chat",
+      "trusted_private_chat"
     ],
     "reason": [
       "custom_reason_sdfeewwwwwerfev3"
@@ -257,31 +252,28 @@
       "unavailable"
     ],
     "timeout": [
-      "1"
+      "10"
     ],
     "timeout_ms": [
-      "1"
+      "10"
     ],
     "topic": [
       "custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee"
+    ],
+    "visibility": [
+      "private",
+      "public"
     ]
   },
   "restler_custom_payload_unquoted": {},
   "restler_custom_payload_uuid4_suffix": {
     "body": "body",
-    "deviceId": "deviceid",
-    "mediaId": "mediaid",
     "name": "name",
+    "preset": "preset",
     "reason": "reason",
-    "roomId": "roomid",
-    "ruleId": "ruleid",
-    "sessionId": "sessionid",
-    "stateKey": "statekey",
-    "tag": "tag",
-    "timeout": "timeout",
     "topic": "topic",
     "txnId": "txnId",
-    "type": "type"
+    "visibility": "visibility"
   },
   "restler_custom_payload_header": {},
   "restler_custom_payload_query": {}

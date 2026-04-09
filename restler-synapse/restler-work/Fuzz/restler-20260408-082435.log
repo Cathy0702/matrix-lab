@@ -1,0 +1,45 @@
+Restler Information: 0 : Starting task Fuzz...
+    DateTime=2026-04-08T20:24:35.7212928Z
+Restler Information: 0 : Launching 'python --version'
+    DateTime=2026-04-08T20:24:35.9567569Z
+Restler Information: 0 : Launching 'python3 --version'
+    DateTime=2026-04-08T20:24:35.9568919Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0169696 with exit code 0x0: 'python3 --version'
+    DateTime=2026-04-08T20:24:35.9805063Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0175275 with exit code 0x0: 'python --version'
+    DateTime=2026-04-08T20:24:35.9805561Z
+Restler Information: 0 : (21) python --version exited with code: 0
+    DateTime=2026-04-08T20:24:35.9868103Z
+Restler Information: 0 : (22) python3 --version exited with code: 0
+    DateTime=2026-04-08T20:24:35.9868536Z
+Restler Information: 0 : Launching 'python3 -B "/RESTler/restler/../engine/restler.py" --restler_grammar "/work/Compile/grammar.py" --custom_mutations "/work/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/work/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 10.000000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap'
+    DateTime=2026-04-08T20:24:36.0072550Z
+Restler Information: 0 : Process execution terminated in 10:00:07.1815506 with exit code 0x0: 'python3 -B "/RESTler/restler/../engine/restler.py" --restler_grammar "/work/Compile/grammar.py" --custom_mutations "/work/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/work/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 10.000000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap'
+    DateTime=2026-04-09T06:24:43.1890171Z
+Restler Information: 0 : (29) python3 -B "/RESTler/restler/../engine/restler.py" --restler_grammar "/work/Compile/grammar.py" --custom_mutations "/work/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/work/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 10.000000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap exited with code: 0
+    DateTime=2026-04-09T06:24:43.1891076Z
+Restler Information: 0 : Launching 'dotnet "/RESTler/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/work/Fuzz" --output_dir "/work/Fuzz/ResponseBuckets" --dictionary_file "/work/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2026-04-09T06:24:43.2058062Z
+Restler Information: 0 : Process execution terminated in 00:00:04.4976887 with exit code 0x86: 'dotnet "/RESTler/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/work/Fuzz" --output_dir "/work/Fuzz/ResponseBuckets" --dictionary_file "/work/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2026-04-09T06:24:47.7036811Z
+Restler Information: 0 : (53) dotnet "/RESTler/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/work/Fuzz" --output_dir "/work/Fuzz/ResponseBuckets" --dictionary_file "/work/Compile/dict.json" --max_instances_per_bucket 10 exited with code: 134
+    DateTime=2026-04-09T06:24:47.7038033Z
+Restler Error: 0 : Results analyzer for logs in /work/Fuzz failed.
+    DateTime=2026-04-09T06:24:47.7112497Z
+Restler Information: 0 : Request coverage (successful / total): 18 / 22
+    DateTime=2026-04-09T06:24:47.8583703Z
+Restler Information: 0 : Attempted requests: 18 / 22
+    DateTime=2026-04-09T06:24:47.8584197Z
+Restler Information: 0 : Bugs were found!
+    DateTime=2026-04-09T06:24:47.8623630Z
+Restler Information: 0 : Bug buckets:
+    DateTime=2026-04-09T06:24:47.8623802Z
+Restler Information: 0 : 
+InvalidDynamicObjectChecker_20x: 2
+PayloadBodyChecker_500: 1
+ResourceHierarchyChecker_20x: 2
+    DateTime=2026-04-09T06:24:47.8632172Z
+Restler Information: 0 : Task Fuzz succeeded.
+    DateTime=2026-04-09T06:24:47.8651442Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2026-04-09T06:24:48.0741613Z

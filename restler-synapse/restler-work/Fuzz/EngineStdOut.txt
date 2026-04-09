@@ -1,57 +1,145 @@
-2026-04-08 06:39:00.067: Initializing: Garbage collection every 30 seconds.
-2026-04-08 06:39:00.260: Generation: 1 
-Invalid value generator random seed: 1775630340.284572
+2026-04-08 20:24:36.258: Initializing: Garbage collection every 30 seconds.
+2026-04-08 20:24:36.268: Generation: 1 
+Invalid value generator random seed: 1775679897.9009778
 Setting invalid value generator random seed: 12345
-Invalid value generator random seed: 1775630340.6311898
+Invalid value generator random seed: 1775679926.7486768
 Setting invalid value generator random seed: 12345
-Invalid value generator random seed: 1775630343.398356
+Invalid value generator random seed: 1775679927.1172786
 Setting invalid value generator random seed: 12345
-Invalid value generator random seed: 1775630343.4910321
+Invalid value generator random seed: 1775679956.957901
 Setting invalid value generator random seed: 12345
-Invalid value generator random seed: 1775630348.6666865
+2026-04-08 20:26:27.871: Generation: 2 
+Invalid value generator random seed: 1775679989.4090846
 Setting invalid value generator random seed: 12345
-Invalid value generator random seed: 1775630348.8985927
+Invalid value generator random seed: 1775680018.7459555
 Setting invalid value generator random seed: 12345
-Invalid value generator random seed: 1775630349.1058636
+Invalid value generator random seed: 1775680019.1166053
 Setting invalid value generator random seed: 12345
-Invalid value generator random seed: 1775630349.3133435
+Invalid value generator random seed: 1775680050.3306372
 Setting invalid value generator random seed: 12345
-Invalid value generator random seed: 1775630349.5914888
+Invalid value generator random seed: 1775680087.4808888
 Setting invalid value generator random seed: 12345
-Invalid value generator random seed: 1775630349.8864162
+Invalid value generator random seed: 1775680091.8355026
 Setting invalid value generator random seed: 12345
-Invalid value generator random seed: 1775631066.2228336
+Invalid value generator random seed: 1775680092.1595798
 Setting invalid value generator random seed: 12345
-2026-04-08 07:25:14.373: Terminating garbage collection. Waiting for max 300 seconds. 
-2026-04-08 07:25:14.376: Exception during garbage collection: [Errno 2] No such file or directory: '/work/Fuzz/RestlerResults/experiment30/logs/network.gc.133272257076024.1.txt'
-Traceback (most recent call last):
-  File "/RESTler/engine/engine/core/fuzzer.py", line 43, in run
-    self._num_total_sequences = driver.generate_sequences(
-                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/RESTler/engine/engine/core/driver.py", line 836, in generate_sequences
-    seq_collection = render(seq_collection, fuzzing_pool, checkers, generation, global_lock,
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/RESTler/engine/engine/core/driver.py", line 332, in render_sequential
-    valid_renderings = render_one(seq_collection[ith], ith, checkers, generation, global_lock, garbage_collector)
-                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/RESTler/engine/engine/core/driver.py", line 219, in render_one
-    renderings = current_seq.render(candidate_values_pool, global_lock)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/RESTler/engine/engine/core/sequences.py", line 637, in render
-    self.send_rendered_request(request, rendered_data, parser, tracked_parameters,
-  File "/RESTler/engine/engine/core/sequences.py", line 384, in send_rendered_request
-    response = request_utilities.send_request_data(rendered_data)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/RESTler/engine/engine/core/request_utilities.py", line 453, in send_request_data
-    success, response = main_sock.sendRecv(rendered_data,
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/RESTler/engine/engine/transport_layer/messaging.py", line 125, in sendRecv
-    RAW_LOGGING(f'Received: {response.to_str!r}\n')
-  File "/RESTler/engine/utils/logger.py", line 567, in raw_network_logging
-    network_log.write(f"{formatting.timestamp()}: {data}")
-  File "/RESTler/engine/utils/logger.py", line 140, in write
-    if os.path.getsize(self._current_log_path) > NetworkLog._MaxLogSize:
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen genericpath>", line 62, in getsize
-FileNotFoundError: [Errno 2] No such file or directory: '/work/Fuzz/RestlerResults/experiment30/logs/network.testing.133272250288952.1.txt'
-
+Invalid value generator random seed: 1775680094.9324515
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680102.2068973
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680136.200099
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680143.8795567
+Setting invalid value generator random seed: 12345
+2026-04-08 20:29:33.246: Generation: 3 
+Invalid value generator random seed: 1775680176.1967363
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680212.1846278
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680212.583711
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680247.8265917
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680302.4819546
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680306.6400676
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680307.0388246
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680319.2451036
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680334.6710868
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680380.2284765
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680385.090248
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680430.86084
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680431.163312
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680431.4870846
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680478.885592
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680502.479982
+Setting invalid value generator random seed: 12345
+WARNING: replay request not found in sequence request collection
+Invalid value generator random seed: 1775680562.6024115
+Setting invalid value generator random seed: 12345
+2026-04-08 20:36:03.809: Generation: 4 
+Invalid value generator random seed: 1775680567.9767866
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680603.224067
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680603.6258552
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680640.0972495
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680864.0562434
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680869.24156
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775680869.5417142
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775681000.7316585
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775681151.4083216
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775681348.957993
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775681350.6932852
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775681791.3814418
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775681995.1245475
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775682217.0912097
+Setting invalid value generator random seed: 12345
+2026-04-08 21:04:15.294: Generation: 5 
+Invalid value generator random seed: 1775682259.8476422
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775682290.5152369
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775682290.8893573
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775682319.7596352
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775684233.5929294
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775684236.5452762
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775684236.9120386
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775685623.1863458
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775686960.6404674
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775688867.0825543
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775688868.3100772
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775690145.0757768
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775690145.405866
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775690145.7427845
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775701680.380619
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775704599.8356113
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775707775.0827148
+Setting invalid value generator random seed: 12345
+2026-04-09 04:20:43.911: Generation: 6 
+Invalid value generator random seed: 1775708449.7350373
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775708482.226997
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775708482.5940812
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1775708514.7467852
+Setting invalid value generator random seed: 12345
+timeout reached
+2026-04-09 06:24:38.003: Terminating garbage collection. Waiting for max 300 seconds. 
+Done.

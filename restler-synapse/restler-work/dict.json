@@ -236,11 +236,11 @@
     "body": ["custom_body_fkqoifoqf0q39fj0qiefnlb;af"],
     "topic": ["custom_topic_gfewfgqgeeeeeeeeeeeeeeeeeeeee"],
     "reason": ["custom_reason_sdfeewwwwwerfev3"],
-    "timeout": [1],
-    "timeout_ms": [1],
+    "timeout": [10],
+    "timeout_ms": [10],
     "set_presence": ["offline", "online", "unavailable"],
-    "method": ["crop", "scale"],
-    "keyName": ["avatar_url", "displayname", "m.tz", "m.example_field"]
+    "visibility": ["private", "public"],
+    "preset": ["private_chat", "public_chat", "trusted_private_chat"]
   },
   "restler_custom_payload_unquoted": {},
   "restler_custom_payload_uuid4_suffix": {

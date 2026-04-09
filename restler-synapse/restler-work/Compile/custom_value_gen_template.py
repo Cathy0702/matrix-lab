@@ -159,27 +159,17 @@ def gen_restler_custom_payload_body(**kwargs):
     
 
 
-def gen_restler_custom_payload_keyName(**kwargs):
-    example_value=None
-    if EXAMPLE_ARG in kwargs:
-        example_value = kwargs[EXAMPLE_ARG]
-
-    # Add logic here to generate values
-    return placeholder_value_generator()
-    
-
-
-def gen_restler_custom_payload_method(**kwargs):
-    example_value=None
-    if EXAMPLE_ARG in kwargs:
-        example_value = kwargs[EXAMPLE_ARG]
-
-    # Add logic here to generate values
-    return placeholder_value_generator()
-    
-
-
 def gen_restler_custom_payload_name(**kwargs):
+    example_value=None
+    if EXAMPLE_ARG in kwargs:
+        example_value = kwargs[EXAMPLE_ARG]
+
+    # Add logic here to generate values
+    return placeholder_value_generator()
+    
+
+
+def gen_restler_custom_payload_preset(**kwargs):
     example_value=None
     if EXAMPLE_ARG in kwargs:
         example_value = kwargs[EXAMPLE_ARG]
@@ -237,6 +227,16 @@ def gen_restler_custom_payload_topic(**kwargs):
     # Add logic here to generate values
     return placeholder_value_generator()
     
+
+
+def gen_restler_custom_payload_visibility(**kwargs):
+    example_value=None
+    if EXAMPLE_ARG in kwargs:
+        example_value = kwargs[EXAMPLE_ARG]
+
+    # Add logic here to generate values
+    return placeholder_value_generator()
+    
 value_generators = {
 	"restler_fuzzable_string": gen_restler_fuzzable_string,
 	"restler_fuzzable_string_unquoted": None,
@@ -252,14 +252,14 @@ value_generators = {
 	"restler_fuzzable_object": None,
 	"restler_custom_payload": {
 		"body": None,
-		"keyName": None,
-		"method": None,
 		"name": None,
+		"preset": None,
 		"reason": None,
 		"set_presence": None,
 		"timeout": None,
 		"timeout_ms": None,
 		"topic": None,
+		"visibility": None,
 	},
 	"restler_custom_payload_unquoted": {
 	},

@@ -33,6 +33,14 @@ You can copy the relevant configurations into your own `homeserver.yaml`. **Note
 
 ### Set up RESTler
 
+This repository provides an extended version of RESTler that includes custom checkers tailored to Matrix Synapse and our filtered API specification files. We recommend using `docker build` for setup.
+
+To build RESTler, clone this repository to your local machine, navigate to the `restler-fuzzer` directory, and run:
+
+```
+docker build -t restler .
+```
+
 ---
 
 ### Property-guided Fuzzing on Matrix

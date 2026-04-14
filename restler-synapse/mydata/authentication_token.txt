@@ -1,2 +1,2 @@
 {"id":{}}
-Authorization: Bearer syt_cmVzdGxlci1mdXp6_JDRxxPCuTpKAvwTGbyjL_37XPSB
+Authorization: Bearer YOUR_TOKEN

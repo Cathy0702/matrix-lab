@@ -1,0 +1,104 @@
+# Configuration file for Synapse.
+#
+# This is a YAML file: see [1] for a quick introduction. Note in particular
+# that *indentation is important*: all the elements of a list or dictionary
+# should have the same indentation.
+#
+# [1] https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+#
+# For more information on how to configure Synapse, including a complete accounting of
+# each option, go to docs/usage/configuration/config_documentation.md or
+# https://element-hq.github.io/synapse/latest/usage/configuration/config_documentation.html
+server_name: "sample.server"
+pid_file: /data/homeserver.pid
+listeners:
+  - port: 8008
+    resources:
+    - compress: false
+      names:
+      - client
+      - federation
+    tls: false
+    type: http
+    x_forwarded: true
+database:
+  name: sqlite3
+  args:
+    database: /data/homeserver.db
+log_config: "sample_log_config.yaml"
+media_store_path: /data/media_store
+registration_shared_secret: "sample_shared_secret"
+report_stats: false
+macaroon_secret_key: "sample_macaroon_secret_key"
+form_secret: "sample_form_secret"
+signing_key_path: "sample_signing_key_path"
+trusted_key_servers:
+  - server_name: "matrix.org"
+rc_messages_per_second: 9999
+rc_message_burst_count: 9999
+enable_registration: true
+enable_registration_without_verification: true
+rc_room_creation:
+  per_second: 9999
+  burst_count: 9999
+rc_registration:
+  per_second: 9999
+  burst_count: 9999
+rc_login:
+  address:
+    per_second: 9999
+    burst_count: 9999
+  account:
+    per_second: 9999
+    burst_count: 9999
+  failed_attempts:
+    per_second: 9999
+    burst_count: 9999
+rc_message:
+  per_second: 9999
+  burst_count: 9999
+  per_second_per_user: 9999
+rc_admin_redaction:
+  per_second: 9999
+  burst_count: 9999
+rc_joins:
+  local:
+    per_second: 9999
+    burst_count: 9999
+  remote:
+    per_second: 9999
+    burst_count: 9999
+  per_room:
+    per_second: 9999
+    burst_count: 9999
+rc_3pid_validation:
+  per_second: 9999
+  burst_count: 9999
+rc_invites:
+  per_room:
+    per_second: 9999
+    burst_count: 9999
+  per_user:
+    per_second: 9999
+    burst_count: 9999
+  per_issuer:
+    per_second: 9999
+    burst_count: 9999
+rc_user_directory:
+  per_second: 9999
+  burst_count: 9999
+rc_third_party_invite:
+  per_second: 9999
+  burst_count: 9999
+rc_media_create:
+  per_second: 9999
+  burst_count: 9999
+rc_key_requests:
+  per_second: 9999
+  burst_count: 9999
+# Disable push notifications (saves overhead)
+push:
+  enabled: false
+# Disable URL previews (saves overhead + avoids external requests)
+url_preview_enabled: false
+# vim:ft=yaml

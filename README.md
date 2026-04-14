@@ -106,10 +106,8 @@ The results are stored in `restler-synapse/restler-work/Fuzz/`. For a complete d
 1. `RestlerResults/experimentXX/logs/network.testing.*.txt`  
    These logs record all activity during fuzzing, including generated request sequences and checker invocations.  
    **Note:** These files can grow very quickly in size.
-
 2. `RestlerResults/experimentXX/logs/*Checker.*.txt`  
    Checker-specific logs that are useful for analyzing and counting checker invocations.
-
 3. `RestlerResults/experimentXX/bug_buckets/`  
    This directory contains potential violations identified by checkers. RESTler automatically replays these cases to test for reproducibility.
 

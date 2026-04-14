@@ -45,4 +45,29 @@ docker build -t restler .
 
 ### Property-guided Fuzzing on Matrix
 
+Before actually get into fuzzing, you need to configure RESTler for your Matrix Synapse. This include several things you need to take care of.
+
+#### Authentication Token
+
+To make valid requests to Matrix Synapse, you need to configure RESTler with a valid authentication token. The steps are:
+
+1. Manually create an account on your Matrix Synapse server. This can be done by sending a `POST` request to the `/_matrix/client/r0/register` endpoint. Alternatively, you can create an admin account using the admin API. For more details on registration, refer to the [official documentation](https://spec.matrix.org/latest/).
+2. Log in to the newly created account by sending a `POST` request to the `/_matrix/client/v3/login` endpoint. Upon successful login, Matrix Synapse will return an authentication token.
+3. Paste the authentication token into `restler-synapse/mydata/authentication_token.txt`. RESTler is configured to read this token from `restler-synapse/restler-work/Compile/engine_settings.json`.
+
+#### Specification Files
+
+There are three specification files can be found in `restler-synapse/mydata/`. 
+
+1. `api.full.json` is the full specification file downloaded from [Matrix official Client-Server API specification](https://spec.matrix.org/latest/client-server-api/api.json). You can still fuzz it if you wish, but you will likely to get extremely low coverage and lots of noise. Dependencies are not resolved for this file, so RESTler cannot perform valid API sequences.
+2. `api.large.json` is the large specification file
+
 ---
+
+### FAQ
+
+#### Error Not Authenticated
+
+#### Can I change my time budget?
+
+#### False Positive

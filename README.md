@@ -43,7 +43,7 @@ docker build -t restler .
 
 ---
 
-### Property-guided Fuzzing on Matrix
+### Configuration
 
 Before actually get into fuzzing, you need to configure RESTler for your Matrix Synapse. This include several things you need to take care of.
 
@@ -57,17 +57,93 @@ To make valid requests to Matrix Synapse, you need to configure RESTler with a v
 
 #### Specification Files
 
-There are three specification files can be found in `restler-synapse/mydata/`. 
+Three specification files can be found in `restler-synapse/mydata/`:
 
-1. `api.full.json` is the full specification file downloaded from [Matrix official Client-Server API specification](https://spec.matrix.org/latest/client-server-api/api.json). You can still fuzz it if you wish, but you will likely to get extremely low coverage and lots of noise. Dependencies are not resolved for this file, so RESTler cannot perform valid API sequences.
-2. `api.large.json` is the large specification file
+1. `api.full.json` is the full specification file downloaded from the [official Matrix Client-Server API specification](https://spec.matrix.org/latest/client-server-api/api.json). You can still fuzz using this file, but you will likely observe extremely low coverage and a large amount of noise. Dependencies are not resolved, so RESTler cannot generate valid API sequences.
+2. `api.large.json` is a partially filtered version of `api.full.json`. It includes some resolved dependencies. Fuzzing with this file may produce many `5xx` errors, and will result in few custom checker invocations.
+3. `api.min.json` is a small specification file tailored to the API sequences used in our experiments. Dependencies are resolved for the selected endpoints.
+
+To **switch between specification files**, modify the `SwaggerSpecFilePath` field in `restler-synapse/restler-work/Compile/config.json`.
+
+---
+
+### Property-guided Fuzzing
+
+At this stage, the configuration is done, and you are ready to do the actual fuzzing. We provide a script, `restler-synapse/run.sh`, to make this process easier. 
+
+#### Compilation
+
+Compilation is performed by running:
+
+```
+./run.sh compile
+```
+
+This step generates files containing information about the API grammar, dependencies, and other metadata required for fuzzing. The generated files are located in `restler-synapse/restler-work/Compile/`. For more details, refer to the RESTler [official documentation](https://github.com/microsoft/restler-fuzzer/tree/main/docs/user-guide).
+
+**Important:** A successful compilation may overwrite `restler-synapse/restler-work/Compile/engine_settings.json` with default settings, which removes the `authentication` field. You will need to add it back manually; otherwise, RESTler will return a "Not Authenticated" error.
+
+#### Test
+
+Testing is performed by running:
+
+```
+./run.sh test
+```
+
+This step executes a lightweight run over each endpoint in the selected specification file. The resulting files are stored in `restler-synapse/restler-work/Test/`.
+
+#### Fuzz
+
+Fuzzing is performed by running:
+
+```
+./run.sh fuzz
+```
+
+The results are stored in `restler-synapse/restler-work/Fuzz/`. For a complete description of output files, refer to the RESTler official documentation. Few interesting files and directories include:
+
+1. `RestlerResults/experimentXX/logs/network.testing.*.txt`  
+   These logs record all activity during fuzzing, including generated request sequences and checker invocations.  
+   **Note:** These files can grow very quickly in size.
+
+2. `RestlerResults/experimentXX/logs/*Checker.*.txt`  
+   Checker-specific logs that are useful for analyzing and counting checker invocations.
+
+3. `RestlerResults/experimentXX/bug_buckets/`  
+   This directory contains potential violations identified by checkers. RESTler automatically replays these cases to test for reproducibility.
+
+---
+
+### Auxiliary Script
+
+The repository includes `analyze.py`, a script used to analyze RESTler log files and evaluate checker invocations.
+
+To run the analysis:
+
+```
+python3 ./analyze.py [network.testing.*.txt ...]
+```
+The arguments should be the paths to `network.testing.*.txt` log files from a single fuzzing run, provided **in sequence**. 
+
+By analyzing these logs, the script reports both the expected and actual number of checker invocations.
 
 ---
 
 ### FAQ
 
-#### Error Not Authenticated
+#### I got a "Not Authenticated" error!
 
-#### Can I change my time budget?
+This usually means something went wrong in `restler-synapse/restler-work/Compile/engine_settings.json`. Check that the `authentication` field is present, especially after running compilation, which may overwrite `engine_settings.json` with default settings.
 
-#### False Positive
+#### Can I change the time budget?
+
+Yes! The time budget controls how long fuzzing runs. You can change it by modifying `restler-synapse/run.sh`.
+
+#### I changed the specification file, but RESTler is still using the old one!
+
+After updating `restler-synapse/restler-work/Compile/config.json`, you need to recompile by running `./run.sh compile`.
+
+#### My InvalidDynamicObjectChecker reports bugs?!
+
+Yeah… we’ve seen that too :(. It’s likely a **false positive**. Matrix is quite tolerant with some inputs, RESTler tries to generate what it considers an "invalid txnid", but Matrix often accepts almost any character.
